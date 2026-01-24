@@ -1,4 +1,6 @@
-# Axion
+<p align="center">
+  <img src="assets/imgs/logo_axion.svg" alt="Logo do Axion" width="200"/>
+</p>
 
 ## Sobre o Axion
 O Axion é uma plataforma colaborativa em desenvolvimento onde autodidatas criam, organizam e compartilham trilhas de estudo modulares, com progressão e autoria clara. O objetivo é transformar conteúdos dispersos da internet em caminhos de aprendizado estruturados, contínuos e fáceis de acompanhar.
