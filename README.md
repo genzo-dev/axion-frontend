@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/imgs/logo_axion.svg" alt="Logo do Axion" width="240"/>
+  <img src="assets/imgs/Frame 9.svg" alt="Logo do Axion" width="1000"/>
 </p>
 
 <p align="center">
@@ -15,10 +15,10 @@ O Axion está sendo desenvolvido para **organizar o conhecimento disperso da int
 
 - Trilhas em formato de módulos;
 - Interação social entre usuários;
-- Verificação para educadores;
 - Segurança para evitar conteúdo inapropriado;
 - Gamificação;
-- Mensageria e grupos de estudo;
+- Verificação para educadores (pós TCC);
+- Mensageria e grupos de estudo (pós TCC);
 
 <!-- **Premissa:** Existe muito conteúdo interessante na internet e muitas vezes é difícil localizá-lo, logo, a ideia é que autodidatas possam se ajudar, criando e compartilhando trilhas com outros autodidatas, formando um ecossistema amplo de estudo compartilhado. Haverá também a possibilidade de mantê-las privadas para registro pessoal.
 
@@ -126,14 +126,13 @@ A documentação pode ser alterada conforme novas atualizações surgirem -->
 - [ ] Criar setup backend
 - [ ] Criar setup docker (somente para PostgreSQL inciialmente)
 - [ ] Criar layout do frontend
+- [ ] Criação de CI básica (testes unitários, integração e e2e)
 - [ ] Autenticação (login/logout)
 - [ ] Recuperação de senha
-- [ ] Estudar e configurar BFF simples
 - [ ] CRUD de trilhas em módulos (públicas/privadas)
 - [ ] Busca de trilhas por nome ou categoria
 - [ ] Progressão de trilhas básica
 - [ ] CRUD do perfil do usuário
-- [ ] Criação de CI básica (testes unitários, integração e e2e)
 
 </details>
 
@@ -143,20 +142,19 @@ A documentação pode ser alterada conforme novas atualizações surgirem -->
 - [ ] Seguir/deixar de seguir usuários
 - [ ] Comentários em trilhas públicas
 - [ ] Possibilidade de curtir e salvar trilhas públicas
-- [ ] Busca de trilhas por nome ou categoria
 - [ ] Compartilhar trilhas públicas a partir do link
 
 </details>
 
 <details>
-  <summary>Etapa 3: Verificação para educadores</summary>
+  <summary>Etapa 3: Gamificação</summary>
 
-- [ ] Estudar bibliotecas para fazer upload e validação de arquivos de forma segura
-- [ ] Avaliar se o usuário é um educador a partir de algum documento
-- [ ] Estudar controle de permissões/roles
-- [ ] Deve ser aceito pelo lado administrativo do sistema
-- [ ] Painel administrativo básico
-- [ ] Usuários verificados devem ganhar uma badge no seu perfil
+- [ ] Estudar fórmulas de XP e tracking de badges
+- [ ] Adaptar documentação pensando em gamificação
+- [ ] Sistema de XP
+- [ ] Níveis de usuário
+- [ ] Badges e conquistas
+- [ ] Visualização de conquistas no perfil
 
 </details>
 
@@ -174,19 +172,27 @@ A documentação pode ser alterada conforme novas atualizações surgirem -->
 **Poderá ser implementado antes da entrega do TCC a depender do progresso do sistema**
 
 <details>
-  <summary>Etapa 5: Gamificação</summary>
+  <summary>Etapa 5: Refatorar e aplicar BFF pattern</summary>
 
-- [ ] Estudar fórmulas de XP e tracking de badges
-- [ ] Adaptar documentação pensando em gamificação
-- [ ] Sistema de XP
-- [ ] Níveis de usuário
-- [ ] Badges e conquistas
-- [ ] Visualização de conquistas no perfil
+- [ ] Estudar sobre BFF e como usar ele no Nest
+- [ ] Refatorar o código inteiro pensando na estrutura BFF
 
 </details>
 
 <details>
-  <summary>Etapa 6: Mensageria para grupos de estudo</summary>
+  <summary>Etapa 6: Verificação para educadores</summary>
+
+- [ ] Estudar bibliotecas para fazer upload e validação de arquivos de forma segura
+- [ ] Avaliar se o usuário é um educador a partir de algum documento
+- [ ] Estudar controle de permissões/roles
+- [ ] Deve ser aceito pelo lado administrativo do sistema
+- [ ] Painel administrativo básico
+- [ ] Usuários verificados devem ganhar uma badge no seu perfil
+
+</details>
+
+<details>
+  <summary>Etapa 7: Mensageria para grupos de estudo</summary>
 
 - [ ] Estudar mensageria
 - [ ] Adaptar documentação pensando em mensageria
@@ -197,7 +203,7 @@ A documentação pode ser alterada conforme novas atualizações surgirem -->
 </details>
 
 <details>
-  <summary>Etapa 7: Refinamento e Extras</summary>
+  <summary>Etapa 8: Refinamento e Extras</summary>
 
 - [ ] Definição de termos de uso (focado em ser informativo)
 - [ ] Limpeza final do código
@@ -270,7 +276,7 @@ A documentação pode ser alterada conforme novas atualizações surgirem -->
 ## Autor
 
 <div align="center">
-  <img src="assets/imgs/profile_github.jpg" alt="Logo do Axion" width="120"/>
+  <img src="https://github.com/genzo-dev.png" alt="Logo do Axion" width="160"/>
 </div>
 
 <div align="center">
