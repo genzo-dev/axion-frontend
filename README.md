@@ -80,9 +80,10 @@ O Axion está sendo desenvolvido para **organizar o conhecimento disperso da int
 
 ## 📝 Documentação:
 
-| Documento                                                                          | Descrição                                         |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------- |
-| [📃 Requisitos](https://www.notion.so/Requisitos-2e5bc7f817018063a163c8527a0a3620) | Mapeia todas as necessidades esperadas no sistema |
+| Documento                                                                           | Descrição                                         |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------- |
+| [👀 Visão Geral](https://www.notion.so/Requisitos-2e5bc7f817018063a163c8527a0a3620) | Explica a ideia, propósito e visão do projeto     |
+| [📃 Requisitos](https://www.notion.so/Requisitos-2e5bc7f817018063a163c8527a0a3620)  | Mapeia todas as necessidades esperadas no sistema |
 
 <!-- ### Documentação completa:
 Veja a documentação completa do sistema a partir desse link do Notion -->
