@@ -71,13 +71,13 @@ export default function Navbar() {
             <div className="flex flex-col w-full items-center gap-4">
               <Link
                 href="/register"
-                className="w-full border border-white/10 bg-transparent hover:bg-[#ff4f00] px-3 py-2 font-bold text-sm xl:text-base text-white hover:text-black transition"
+                className="font-manrope w-full border border-white/10 bg-transparent hover:bg-[#ff4f00] px-3 py-2 font-bold text-sm xl:text-base text-white hover:text-black transition"
               >
                 Cadastrar-se
               </Link>
               <Link
                 href="/login"
-                className="w-full border border-transparent bg-[#ff4f00] hover:brightness-125 px-3 py-2 font-bold text-sm xl:text-base text-black transition"
+                className="font-manrope w-full border border-transparent bg-[#ff4f00] hover:brightness-75 px-3 py-2 font-bold text-sm xl:text-base text-black transition"
               >
                 Entrar
               </Link>
@@ -100,13 +100,13 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/register"
-              className="border border-white/10 bg-transparent hover:bg-[#ff4f00] px-3 py-2 font-bold text-sm xl:text-base text-white hover:text-black transition"
+              className="font-manrope border border-white/10 bg-transparent hover:bg-[#ff4f00] px-3 py-2 font-bold text-sm xl:text-base text-white hover:text-black transition"
             >
               Cadastrar-se
             </Link>
             <Link
               href="/login"
-              className="border border-transparent bg-[#ff4f00] hover:brightness-125 px-3 py-2 font-bold text-sm xl:text-base text-black transition"
+              className="font-manrope border border-transparent bg-[#ff4f00] hover:brightness-75 px-3 py-2 font-bold text-sm xl:text-base text-black transition"
             >
               Entrar
             </Link>
