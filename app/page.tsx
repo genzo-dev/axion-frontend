@@ -29,14 +29,31 @@ export default function Home() {
 
           <Link
             href="/discover"
-            className="font-manrope bg-[#ff4f00] hover:brightness-75 px-4 lg:px-6 py-2 lg:py-3 font-bold text-black sm:text-lg transition"
+            className="font-manrope bg-[#ff4f00] hover:brightness-75 px-4 lg:px-12 py-2 lg:py-3 font-bold text-black sm:text-lg transition"
           >
             Explorar Trilhas
           </Link>
         </div>
       </div>
 
-      <div className="h-200 bg-neutral-100 rounded-lg -translate-y-6 -mb-6 mx-4 2xl:mx-40 rotate-1"></div>
+      <div className="h-250 bg-neutral-100 rounded-lg -translate-y-6 -mb-6 mx-4 2xl:mx-40 rotate-1 px-4 py-2">
+        <h2 className="border-b-2 border-black text-black text-4xl/relaxed font-manrope font-bold">
+          Por que o Axion existe? - O dilema do autodidata.
+        </h2>
+
+        <p className="font-manrope text-black text-lg mt-4">
+          Autodidatas têm disciplina para estudar, mas perdem tempo filtrando
+          conteúdo duvidoso. As plataformas tradicionais são fechadas — só
+          instrutores aprovados podem criar conteúdo, ignorando a inteligência
+          coletiva da comunidade.
+        </p>
+
+        <p className="font-manrope text-black text-lg mt-4">
+          Não existe um espaço centralizado onde aprendizes possam organizar,
+          compartilhar e descobrir trilhas de estudo curadas por outros
+          autodidatas como eles.
+        </p>
+      </div>
     </>
   );
 }

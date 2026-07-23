@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><g clip-path="url(#clip0_358_11)">
+<path d="M80 0H20C8.9543 0 0 8.9543 0 20V80C0 91.0457 8.9543 100 20 100H80C91.0457 100 100 91.0457 100 80V20C100 8.9543 91.0457 0 80 0Z" fill="black"></path>
+<path d="M17 84.9727L44.7586 15.2202H55.5367L83.397 84.9727H74.7542L67.4333 66.5686L64.6879 59.6544L55.5367 36.3697L54.6216 33.9293C54.2149 32.8447 53.7403 31.6246 53.1981 30.2689C52.7235 28.8453 52.2151 27.4218 51.6729 25.9983C51.1983 24.5748 50.7239 23.2868 50.2494 22.1345H49.5376C49.1309 23.4224 48.5886 24.9476 47.9107 26.7101C47.3006 28.4725 46.6567 30.235 45.9788 31.9974C45.3687 33.6921 44.8265 35.1495 44.3519 36.3697L35.2007 59.6544L32.4554 66.5686L25.2361 84.9727H17Z" fill="white"></path>
+<circle cx="50" cy="58" r="6" fill="#D9D9D9"></circle>
+</g><defs>
+<clipPath id="clip0_358_11">
+<rect width="100" height="100" fill="white"></rect>
+</clipPath>
+</defs></svg>

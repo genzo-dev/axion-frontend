@@ -32,9 +32,9 @@ export default function Navbar() {
       className={clsx(
         "font-raleway fixed top-0 left-0 lg:right-10 lg:left-10 2xl:right-40 2xl:left-40 lg:top-4 lg:rounded-lg z-50 flex w-full lg:w-auto justify-between items-center",
         "py-4 sm:py-6 px-6 sm:px-12 lg:px-6 xl:px-12 2xl:px-14 lg:py-4",
-        "text-white border border-white/5 lg:bg-white/5 lg:hover:bg-white/8",
+        "text-white border border-white/5 lg:bg-[#0c0c0c67] lg:hover:bg-[#0c0c0c]",
         "transition-colors duration-300 z-9997",
-        isMenuOpen ? "bg-black z-9997" : "bg-white/10",
+        isMenuOpen ? "bg-black z-9997" : "bg-[#0c0c0c]",
       )}
     >
       <div className={containerStyle}>

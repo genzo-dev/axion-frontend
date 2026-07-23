@@ -17,7 +17,7 @@ export default function NotFoundPage() {
         <h1 className="font-manrope text-7xl lg:text-9xl font-extrabold text-[#ff4f00]">
           404
         </h1>
-        <p className="font-manrope text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+        <p className="font-manrope text-lg sm:text-2xl md:text-3xl lg:text-4xl/tight xl:text-5xl/tight font-bold">
           Sabemos que essa página deveria existir. A teoria prevê ela aqui...
         </p>
         <Link
