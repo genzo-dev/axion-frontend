@@ -1,3 +1,5 @@
+import FunctionSection from "@/components/Landing/Sections/FunctionSection";
+import ProblemSection from "@/components/Landing/Sections/ProblemSection";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,24 +38,63 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-250 bg-neutral-100 rounded-lg -translate-y-6 -mb-6 mx-4 2xl:mx-40 rotate-1 px-4 py-2">
-        <h2 className="border-b-2 border-black text-black text-4xl/relaxed font-manrope font-bold">
-          Por que o Axion existe? - O dilema do autodidata.
-        </h2>
+      <ProblemSection />
 
-        <p className="font-manrope text-black text-lg mt-4">
-          Autodidatas têm disciplina para estudar, mas perdem tempo filtrando
-          conteúdo duvidoso. As plataformas tradicionais são fechadas — só
-          instrutores aprovados podem criar conteúdo, ignorando a inteligência
-          coletiva da comunidade.
-        </p>
+      <FunctionSection />
 
-        <p className="font-manrope text-black text-lg mt-4">
-          Não existe um espaço centralizado onde aprendizes possam organizar,
-          compartilhar e descobrir trilhas de estudo curadas por outros
-          autodidatas como eles.
-        </p>
-      </div>
+      {/* <div className="flex flex-wrap justify-center gap-4 lg:gap-12 mt-8">
+          <div
+            className="flex-[1_1_220px] max-w-[320px]
+                  aspect-square
+                  border border-white/5 bg-white/10
+                  hover:bg-[#0c0c0c] hover:scale-105 transition p-4"
+          >
+            <h3 className="border-b-2 border-white text-lg md:text-2xl lg:text-3xl/normal text-[#ff4f00] font-manrope font-bold">
+              {" "}
+              1. Crie sua própria trilha{" "}
+            </h3>{" "}
+            <p className="text-lg py-4 font-manrope">
+              {" "}
+              Monte um roteiro de estudos com módulos, links e recursos. Pode
+              ser um guia público para a comunidade ou seu registro pessoal
+              privado.{" "}
+            </p>
+          </div>
+
+          <div
+            className="flex-[1_1_220px] max-w-[320px]
+                  aspect-square
+                  border border-white/5 bg-white/10
+                  hover:bg-[#0c0c0c] hover:scale-105 transition p-4"
+          >
+            <h3 className="border-b-2 border-white text-lg md:text-2xl lg:text-3xl/normal text-[#ff4f00] font-manrope font-bold">
+              {" "}
+              2. Compartilhe conhecimento
+            </h3>{" "}
+            <p className="text-lg py-4 font-manrope">
+              {" "}
+              Publique sua trilha como guia público e ajude outros autodidatas a
+              encontrar o caminho certo nos estudos.
+            </p>
+          </div>
+          <div
+            className="flex-[1_1_220px] max-w-[320px]
+                  aspect-square
+                  border border-white/5 bg-white/10
+                  hover:bg-[#0c0c0c] hover:scale-105 transition p-4"
+          >
+            <h3 className="border-b-2 border-white text-lg md:text-2xl lg:text-3xl/normal text-[#ff4f00] font-manrope font-bold">
+              {" "}
+              3. Estude no seu ritmo
+            </h3>{" "}
+            <p className="text-lg py-4 font-manrope">
+              {" "}
+              Siga trilhas criadas pela comunidade, marque seu progresso e
+              evolua nos estudos com conteúdo curado por quem entende do
+              assunto.
+            </p>
+          </div>
+        </div> */}
     </>
   );
 }

@@ -14,7 +14,7 @@ export default function Navbar() {
     { label: "Início", url: "#inicio" },
     { label: "Problema", url: "#problema" },
     { label: "Funcionamento", url: "#funcionamento" },
-    { label: "Recursos", url: "#recursos" },
+    // { label: "Recursos", url: "#recursos" },
     { label: "Público", url: "#publico" },
     { label: "Roadmap", url: "#roadmap" },
   ];
