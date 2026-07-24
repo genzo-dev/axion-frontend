@@ -5,7 +5,7 @@ import { MdGroups2 } from "react-icons/md";
 
 export default function AudienceSection() {
   return (
-    <div className="px-6 sm:px-12 lg:px-10 2xl:px-40">
+    <section className="px-6 sm:px-12 lg:px-10 2xl:px-40">
       <div className="flex flex-col items-start py-12 lg:max-w-1/2 font-manrope">
         <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-manrope md:text-center md:pt-12">
           Para quem é o Axion?
@@ -79,6 +79,6 @@ export default function AudienceSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

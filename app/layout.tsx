@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Manrope } from "next/font/google";
+import { DM_Sans, Geist, Geist_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 import ScrollToTopButton from "@/components/Buttons/ScrollToTopButton";
 import Footer from "@/components/Footer";
@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-const manrope = Manrope({
+// TODO: ALTERAR VARIAVEL DE FONTE
+const manrope = DM_Sans({
   variable: "--font-manrope",
   subsets: ["latin"],
 });
