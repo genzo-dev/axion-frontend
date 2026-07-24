@@ -25,7 +25,7 @@ export default function ScrollToTopButton() {
     <>
       <div
         className={clsx(
-          "fixed bottom-6 right-6 z-[999] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+          "fixed bottom-4 right-6 z-[999] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
           showButton
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4 pointer-events-none",

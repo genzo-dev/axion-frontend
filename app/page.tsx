@@ -1,8 +1,12 @@
+import AudienceSection from "@/components/Landing/Sections/AudienceSection";
 import FunctionSection from "@/components/Landing/Sections/FunctionSection";
 import ProblemSection from "@/components/Landing/Sections/ProblemSection";
 import Navbar from "@/components/Navbar";
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import { FaBook } from "react-icons/fa6";
+import { MdGroups2 } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -42,59 +46,7 @@ export default function Home() {
 
       <FunctionSection />
 
-      {/* <div className="flex flex-wrap justify-center gap-4 lg:gap-12 mt-8">
-          <div
-            className="flex-[1_1_220px] max-w-[320px]
-                  aspect-square
-                  border border-white/5 bg-white/10
-                  hover:bg-[#0c0c0c] hover:scale-105 transition p-4"
-          >
-            <h3 className="border-b-2 border-white text-lg md:text-2xl lg:text-3xl/normal text-[#ff4f00] font-manrope font-bold">
-              {" "}
-              1. Crie sua própria trilha{" "}
-            </h3>{" "}
-            <p className="text-lg py-4 font-manrope">
-              {" "}
-              Monte um roteiro de estudos com módulos, links e recursos. Pode
-              ser um guia público para a comunidade ou seu registro pessoal
-              privado.{" "}
-            </p>
-          </div>
-
-          <div
-            className="flex-[1_1_220px] max-w-[320px]
-                  aspect-square
-                  border border-white/5 bg-white/10
-                  hover:bg-[#0c0c0c] hover:scale-105 transition p-4"
-          >
-            <h3 className="border-b-2 border-white text-lg md:text-2xl lg:text-3xl/normal text-[#ff4f00] font-manrope font-bold">
-              {" "}
-              2. Compartilhe conhecimento
-            </h3>{" "}
-            <p className="text-lg py-4 font-manrope">
-              {" "}
-              Publique sua trilha como guia público e ajude outros autodidatas a
-              encontrar o caminho certo nos estudos.
-            </p>
-          </div>
-          <div
-            className="flex-[1_1_220px] max-w-[320px]
-                  aspect-square
-                  border border-white/5 bg-white/10
-                  hover:bg-[#0c0c0c] hover:scale-105 transition p-4"
-          >
-            <h3 className="border-b-2 border-white text-lg md:text-2xl lg:text-3xl/normal text-[#ff4f00] font-manrope font-bold">
-              {" "}
-              3. Estude no seu ritmo
-            </h3>{" "}
-            <p className="text-lg py-4 font-manrope">
-              {" "}
-              Siga trilhas criadas pela comunidade, marque seu progresso e
-              evolua nos estudos com conteúdo curado por quem entende do
-              assunto.
-            </p>
-          </div>
-        </div> */}
+      <AudienceSection />
     </>
   );
 }
