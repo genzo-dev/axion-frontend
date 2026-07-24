@@ -18,7 +18,7 @@ export default function AudienceSection() {
       </div>
       <div className="flex flex-col lg:gap-12">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-4 lg:gap-12 items-stretch">
-          <div className="relative w-full h-full bg-white/10">
+          <div className="relative w-full h-64 sm:h-80 lg:h-full bg-white/10">
             <Image
               src="/students.jpg"
               alt="sla"
@@ -52,7 +52,7 @@ export default function AudienceSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-4 sm:gap-6 lg:gap-12 items-stretch">
           <div className="w-auto lg:w-full h-auto lg:h-90 order-2 lg:order-1">
-            <div className="flex items-center gap-4 mb-8 sm:mt-4 lg:mt-0">
+            <div className="flex items-center gap-4 mb-8 lg:mt-0">
               <div
                 className={clsx(
                   "font-manrope bg-[#ff4f00] w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
@@ -74,7 +74,7 @@ export default function AudienceSection() {
             </p>
           </div>
           <div className=" w-0.5 bg-[#ff4f00] hidden lg:block lg:order-2"></div>
-          <div className="relative w-full h-full bg-white/10 order-1 lg:order-3">
+          <div className="relative w-full h-64 sm:h-80 lg:h-full bg-white/10 bg-white/10 order-1 lg:order-3">
             <Image src="/tests.jpg" alt="sla" fill className="object-cover" />
           </div>
         </div>
