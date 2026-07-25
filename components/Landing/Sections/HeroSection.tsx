@@ -14,7 +14,10 @@ export default function HeroSection() {
         priority
         className="w-full h-screen object-cover"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-neutral-100 text-center gap-8 lg:gap-16 px-6 lg:px-20 2xl:px-72">
+      <div
+        id="hero"
+        className="absolute inset-0 flex flex-col items-center justify-center text-neutral-100 text-center gap-8 lg:gap-16 px-6 lg:px-20 2xl:px-72"
+      >
         {/* <h1 className="font-manrope text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold ">
             Organize o conhecimento disperso da internet em trilhas de estudo
           </h1> */}

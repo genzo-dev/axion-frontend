@@ -2,7 +2,10 @@ import Card from "../Card";
 
 export default function FunctionSection() {
   return (
-    <div className="flex flex-col items-center py-12 px-6 sm:px-12 lg:px-10 2xl:px-40 gap-8">
+    <section
+      id="how-it-works"
+      className="scroll-mt-30 flex flex-col items-center py-12 px-6 sm:px-12 lg:px-10 2xl:px-40 gap-8"
+    >
       <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-manrope text-center py-12">
         Como o Axion vai funcionar?
       </h2>
@@ -48,6 +51,6 @@ export default function FunctionSection() {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

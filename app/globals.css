@@ -30,6 +30,10 @@ body {
   scrollbar-gutter: stable;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .menu-btn {
   background-color: transparent;
   border: none;

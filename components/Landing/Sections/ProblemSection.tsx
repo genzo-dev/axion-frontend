@@ -1,7 +1,7 @@
 export default function ProblemSection() {
   return (
     <section
-      id="problema"
+      id="purpose"
       className=" scroll-mt-30 flex flex-col gap-2 lg:gap-4 bg-neutral-100 rounded-lg -translate-y-12 -mb-12 mx-6 sm:mx-12 lg:mx-6 2xl:mx-40 px-4 pt-2 pb-6"
     >
       <div>

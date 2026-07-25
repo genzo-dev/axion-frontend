@@ -17,7 +17,10 @@ export default function PhasesSection() {
   }, []);
 
   return (
-    <section className="flex flex-col lg:flex-row lg:gap-24 items-center lg:items-start lg:justify-between px-6 sm:px-12 lg:px-10 2xl:px-40 py-24">
+    <section
+      id="roadmap"
+      className="scroll-mt-30 flex flex-col lg:flex-row lg:gap-24 items-center lg:items-start lg:justify-between px-6 sm:px-12 lg:px-10 2xl:px-40 py-24"
+    >
       {isLg ? (
         <StickyBox offsetTop={120}>
           {" "}
@@ -35,10 +38,6 @@ export default function PhasesSection() {
               o projeto concluiu a <strong>Fase 0</strong> e a{" "}
               <strong>Fase 1</strong> está sendo desenvolvimento.
             </p>
-            {/* <p>
-          Feito por autodidatas, para autodidatas — uma plataforma construída
-          por quem estuda de verdade, para quem estuda de verdade.
-          </p> */}
           </div>
         </StickyBox>
       ) : (
@@ -56,10 +55,6 @@ export default function PhasesSection() {
             projeto concluiu a <strong>Fase 0</strong> e a{" "}
             <strong>Fase 1</strong> está sendo implementada.
           </p>
-          {/* <p>
-          Feito por autodidatas, para autodidatas — uma plataforma construída
-          por quem estuda de verdade, para quem estuda de verdade.
-          </p> */}
         </div>
       )}
 
