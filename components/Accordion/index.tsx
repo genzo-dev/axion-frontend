@@ -18,13 +18,13 @@ export default function Accordion({ title, children }: AccrodionProps) {
         onClick={() => setOpen(!open)}
         data-cursor="pointer"
         className={clsx(
-          "flex font-manrope font-bold items-center justify-between border-white/30 text-start px-4 py-4 cursor-pointer",
+          "flex font-manrope font-bold items-center justify-between border-white/30 text-start px-4 py-4 cursor-pointer gap-4",
           open
             ? "border-t border-x text-[#ff4f00]"
             : "border text-white/70 group-hover:text-white",
         )}
       >
-        <div className="relative w-4 h-4">
+        <div className="relative w-4 h-4 shrink-0">
           <span className="absolute w-full h-0.5 bg-current top-1/2 -translate-y-1/2 transition-all duration-300" />
           <span
             className={clsx(
@@ -34,12 +34,12 @@ export default function Accordion({ title, children }: AccrodionProps) {
           />
         </div>
 
-        <label className="text-base">{title}</label>
+        <label className="text-base text-end cursor-pointer">{title}</label>
       </div>
       {open && (
         <div
           className={clsx(
-            "border border-white/30 border-t-0 px-4 py-4 text-start",
+            "border font-manrope border-white/30 border-t-0 px-4 py-4 text-start",
           )}
         >
           {children}
