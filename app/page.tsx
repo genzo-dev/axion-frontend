@@ -5,6 +5,7 @@ import AudienceSection from "@/components/Landing/Sections/AudienceSection";
 import CTASection from "@/components/Landing/Sections/CTASection";
 import FunctionSection from "@/components/Landing/Sections/FunctionSection";
 import HeroSection from "@/components/Landing/Sections/HeroSection";
+import PhasesSection from "@/components/Landing/Sections/PhasesSection";
 import ProblemSection from "@/components/Landing/Sections/ProblemSection";
 import Navbar from "@/components/Navbar";
 import { TextLoopCustom } from "@/components/TextLoopCustom";
@@ -33,7 +34,9 @@ export default function Home() {
       {/* TODO: CRIAR ROADMAP SECTION */}
       {/* <RoadmapSection /> */}
 
-      <section className="flex flex-col lg:flex-row lg:gap-24 items-center lg:items-start lg:justify-between px-6 sm:px-12 lg:px-10 2xl:px-40 py-24">
+      <PhasesSection />
+
+      {/* <section className="flex flex-col lg:flex-row lg:gap-24 items-center lg:items-start lg:justify-between px-6 sm:px-12 lg:px-10 2xl:px-40 py-24">
         <div className="flex flex-col w-full lg:flex-1 items-start font-manrope pb-12 lg:pb-0">
           <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-manrope md:text-center ">
             O que está por vir
@@ -47,10 +50,7 @@ export default function Home() {
             <label className="text-[#ff4f00]">Status atual</label>: Atualmente o
             projeto concluiu a Fase 0 e a Fase 1 está sendo implementada.
           </p>
-          {/* <p>
-          Feito por autodidatas, para autodidatas — uma plataforma construída
-          por quem estuda de verdade, para quem estuda de verdade.
-          </p> */}
+     
         </div>
 
         <div className="flex flex-col w-full lg:flex-1 gap-4">
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </Accordion>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
