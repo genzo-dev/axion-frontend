@@ -23,7 +23,7 @@ export default function AudienceSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-4 lg:gap-12 items-stretch">
           <div className="relative w-full h-64 sm:h-80 lg:h-full bg-white/10">
             <Image
-              src="/students.jpg"
+              src="/images/students.jpg"
               alt="Estudantes buscando mais conhecimento"
               fill
               className="object-cover"
@@ -79,7 +79,7 @@ export default function AudienceSection() {
           <div className=" w-0.5 bg-[#ff4f00] hidden lg:block lg:order-2"></div>
           <div className="relative w-full h-64 sm:h-80 lg:h-full bg-white/10 bg-white/10 order-1 lg:order-3">
             <Image
-              src="/tests.jpg"
+              src="/images/tests.jpg"
               alt="Profissional analisando materiais de estudo"
               fill
               className="object-cover"

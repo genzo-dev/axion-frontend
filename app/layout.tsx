@@ -3,7 +3,7 @@ import { DM_Sans, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-const manrope = DM_Sans({
+const dm_sans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
 });
@@ -50,6 +50,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  manifest: "/assets/axion-favicon/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/assets/axion-favicon/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/assets/axion-favicon/apple-touch-icon.png" }],
+  },
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
@@ -58,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${manrope.variable} h-full antialiased`}>
+    <html lang="pt-BR" className={`${dm_sans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-dm-sans">
         <main>
           {children}
