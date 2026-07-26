@@ -20,7 +20,7 @@ export default function Accordion({ title, children }: AccrodionProps) {
         className={clsx(
           "flex font-dm-sans font-bold items-center justify-between border-white/30 text-start px-4 py-4 cursor-pointer gap-4",
           open
-            ? "border-t border-x text-[#ff4f00]"
+            ? "border-t border-x text-primary"
             : "border text-white/70 group-hover:text-white",
         )}
       >

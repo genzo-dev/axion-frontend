@@ -2,7 +2,7 @@ export default function ProblemSection() {
   return (
     <section
       id="purpose"
-      className=" scroll-mt-30 flex flex-col gap-2 lg:gap-4 bg-neutral-100 rounded-lg -translate-y-12 -mb-12 mx-6 sm:mx-12 lg:mx-6 2xl:mx-40 px-4 pt-2 pb-6"
+      className=" scroll-mt-30 flex flex-col gap-2 lg:gap-4 bg-[#FAF9F6] rounded-lg -translate-y-12 -mb-12 mx-6 sm:mx-12 lg:mx-6 2xl:mx-40 px-4 pt-2 pb-6"
     >
       <div>
         <h2 className="border-b-2 border-black text-black text-2xl/relaxed md:text-3xl/relaxed lg:text-4xl/relaxed font-dm-sans font-bold">
@@ -55,7 +55,7 @@ export default function ProblemSection() {
           condutor que transforme esses fragmentos em uma jornada coerente.
         </p>
 
-        <p className="font-dm-sans text-black border-b-2 border-[#ff4f00] sm:text-lg font-bold mt-4">
+        <p className="font-dm-sans text-black border-b-2 border-primary sm:text-lg font-bold mt-4">
           O Axion nasce para resolver esses três problemas de uma vez.
         </p>
       </div>

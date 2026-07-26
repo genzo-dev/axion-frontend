@@ -26,7 +26,7 @@ export default function FunctionSection() {
             outros autodidatas a encontrar o caminho certo.
           </p>
           <p className="text-sm">
-            <strong className="text-[#ff4f00]">Futuro:</strong> sistema de apoio
+            <strong className="text-primary">Futuro:</strong> sistema de apoio
             financeiro para usuários criadores e gamificação com XP e
             conquistas.
           </p>
@@ -38,13 +38,13 @@ export default function FunctionSection() {
             com conteúdo organizado por quem entende do assunto.
           </p>
           <p className="text-sm">
-            <strong className="text-[#ff4f00]">Futuro:</strong> grupos de estudo
+            <strong className="text-primary">Futuro:</strong> grupos de estudo
             com chat para aprendizado colaborativo e recomendação por IA para
             descobrir novas trilhas.
           </p>
         </Card>
 
-        <div className="flex flex-col justify-center itens-center hover:scale-105 transition text-black font-black w-full bg-[#ff4f00] border border-transparent px-4 py-6">
+        <div className="flex flex-col justify-center itens-center hover:scale-105 transition text-black font-black w-full bg-primary border border-transparent px-4 py-6">
           <h3 className="text-3xl/loose mb-4 font-extrabold">Axion</h3>
           <span className="text-lg">
             Pequena partícula, grande universo. Cada trilha no Axion sustenta um

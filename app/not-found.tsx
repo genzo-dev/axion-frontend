@@ -19,7 +19,7 @@ export default function NotFoundPage() {
         className="w-full h-screen object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-neutral-100 text-center gap-8 lg:gap-12 px-6 sm:px-12 lg:px-40 xl:px-60 2xl:px-128">
-        <h1 className="font-dm-sans text-7xl lg:text-9xl font-extrabold text-[#ff4f00]">
+        <h1 className="font-dm-sans text-7xl lg:text-9xl font-extrabold text-primary">
           404
         </h1>
         <p className="font-dm-sans text-lg sm:text-2xl md:text-3xl lg:text-4xl/tight xl:text-5xl/tight font-bold">
@@ -27,7 +27,7 @@ export default function NotFoundPage() {
         </p>
         <Link
           href="/"
-          className="font-dm-sans bg-[#ff4f00] hover:brightness-75 px-4 lg:px-6 py-2 lg:py-3 font-bold text-black sm:text-lg transition"
+          className="font-dm-sans bg-primary hover:brightness-75 px-4 lg:px-6 py-2 lg:py-3 font-bold text-black sm:text-lg transition"
         >
           Voltar para o universo conhecido
         </Link>

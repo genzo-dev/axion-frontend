@@ -36,8 +36,8 @@ export default function PhasesSection() {
             </p>
 
             <p className="text-sm mt-4">
-              <label className="text-[#ff4f00]">Status atual</label>: Atualmente
-              o projeto concluiu a <strong>Fase 0</strong> e a{" "}
+              <label className="text-primary">Status atual</label>: Atualmente o
+              projeto concluiu a <strong>Fase 0</strong> e a{" "}
               <strong>Fase 1</strong> está sendo desenvolvimento.
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function PhasesSection() {
           </p>
 
           <p className="text-sm xl:max-w-1/2 mt-4">
-            <label className="text-[#ff4f00]">Status atual</label>: Atualmente o
+            <label className="text-primary">Status atual</label>: Atualmente o
             projeto concluiu a <strong>Fase 0</strong> e a{" "}
             <strong>Fase 1</strong> está sendo implementada.
           </p>

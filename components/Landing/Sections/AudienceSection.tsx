@@ -24,12 +24,12 @@ export default function AudienceSection() {
               className="object-cover"
             />
           </div>
-          <div className=" w-0.5 bg-[#ff4f00] hidden lg:block"></div>
+          <div className=" w-0.5 bg-primary hidden lg:block"></div>
           <div className="w-auto lg:w-full h-auto lg:h-90 mb-8 sm:mt-4 lg:mt-0">
             <div className="flex items-center gap-4 mb-8">
               <div
                 className={clsx(
-                  "font-dm-sans bg-[#ff4f00] w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
+                  "font-dm-sans bg-primary w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
                 )}
               >
                 <FaBook size={24} />
@@ -53,7 +53,7 @@ export default function AudienceSection() {
             <div className="flex items-center gap-4 mb-8 lg:mt-0">
               <div
                 className={clsx(
-                  "font-dm-sans bg-[#ff4f00] w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
+                  "font-dm-sans bg-primary w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
                 )}
               >
                 <MdGroups2 size={24} />
@@ -71,7 +71,7 @@ export default function AudienceSection() {
               trilha certa.
             </p>
           </div>
-          <div className=" w-0.5 bg-[#ff4f00] hidden lg:block lg:order-2"></div>
+          <div className=" w-0.5 bg-primary hidden lg:block lg:order-2"></div>
           <div className="relative w-full h-64 sm:h-80 lg:h-full bg-white/10 bg-white/10 order-1 lg:order-3">
             <Image
               src="/images/tests.jpg"
