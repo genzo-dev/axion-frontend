@@ -6,15 +6,15 @@ import Link from "next/link";
 import Logo from "../Logo";
 import MenuButton from "../Buttons/MenuButton";
 import NavbarLink from "./_components/NavbarLink";
+import { DefaultButton } from "../Buttons/DefaultButton";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const containerStyle = clsx("rounded-full py-2");
+  const containerStyle = clsx("rounded-full");
   const navLinkMap = [
     { label: "Início", url: "#hero" },
     { label: "Propósito", url: "#purpose" },
     { label: "Funcionamento", url: "#how-it-works" },
-    // { label: "Recursos", url: "#recursos" },
     { label: "Público", url: "#audience" },
     { label: "Roadmap", url: "#roadmap" },
   ];

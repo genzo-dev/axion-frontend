@@ -14,10 +14,6 @@ export default function AudienceSection() {
           Para quem é o Axion?
         </h2>
         <p>Feito por autodidatas, para autodidatas</p>
-        {/* <p>
-          Feito por autodidatas, para autodidatas — uma plataforma construída
-          por quem estuda de verdade, para quem estuda de verdade.
-          </p> */}
       </div>
       <div className="flex flex-col lg:gap-12">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-4 lg:gap-12 items-stretch">
@@ -26,6 +22,7 @@ export default function AudienceSection() {
               src="/images/students.jpg"
               alt="Estudantes buscando mais conhecimento"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -82,6 +79,7 @@ export default function AudienceSection() {
               src="/images/tests.jpg"
               alt="Profissional analisando materiais de estudo"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
