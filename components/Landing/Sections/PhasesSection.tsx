@@ -6,6 +6,7 @@ import { FaCalendar, FaCheck } from "react-icons/fa6";
 import { RiProgress6Line } from "react-icons/ri";
 import StickyBox from "react-sticky-box";
 import LandingSectionWrapper from "../LandingSectionWrapper";
+import StatusPhaseBadge from "../StatusPhaseBadge";
 
 export default function PhasesSection() {
   const [isLg, setIsLg] = useState(false);
@@ -71,9 +72,7 @@ export default function PhasesSection() {
               sobre fundações sólidas — do backend ao frontend.
             </p>
 
-            <label className="flex items-center justify-center gap-4 border border-transparent text-black w-full py-2 px-2 bg-[#ff4f00]">
-              <FaCheck /> CONCLUÍDO
-            </label>
+            <StatusPhaseBadge status="CONCLUIDO" />
           </div>
         </Accordion>
         <Accordion title="Fase 1 - MVP (Produto Mínimo Viável)">
@@ -87,9 +86,7 @@ export default function PhasesSection() {
               compartilhar e descobrir conhecimento de forma organizada.
             </p>
 
-            <label className="flex items-center justify-center gap-4 border border-white/10  w-full py-2 px-2 bg-transparent">
-              <RiProgress6Line /> EM ANDAMENTO
-            </label>
+            <StatusPhaseBadge status="EM ANDAMENTO" />
           </div>
         </Accordion>
         <Accordion title="Fase 2 - Apoio a criadores">
@@ -103,9 +100,7 @@ export default function PhasesSection() {
               conteúdo de alto nível.
             </p>
 
-            <label className="flex items-center justify-center gap-4 border border-white/10  w-full py-2 px-2 bg-transparent">
-              <FaCalendar /> PLANEJADO
-            </label>
+            <StatusPhaseBadge status="PLANEJADO" />
           </div>
         </Accordion>
         <Accordion title="Fase 3 - Gamificação">
@@ -119,9 +114,7 @@ export default function PhasesSection() {
               plataforma.
             </p>
 
-            <label className="flex items-center justify-center gap-4 border border-white/10  w-full py-2 px-2 bg-transparent">
-              <FaCalendar /> PLANEJADO
-            </label>
+            <StatusPhaseBadge status="PLANEJADO" />
           </div>
         </Accordion>
         <Accordion title="Fase 4 - Grupos de estudo">
@@ -134,9 +127,7 @@ export default function PhasesSection() {
               esteja no seu próprio ritmo.
             </p>
 
-            <label className="flex items-center justify-center gap-4 border border-white/10  w-full py-2 px-2 bg-transparent">
-              <FaCalendar /> PLANEJADO
-            </label>
+            <StatusPhaseBadge status="PLANEJADO" />
           </div>
         </Accordion>
         <Accordion title="Fase 5 - Recomendação por IA (Inteligência Artificial)">
@@ -149,9 +140,7 @@ export default function PhasesSection() {
               Descubra conteúdo relevante sem perder tempo procurando.
             </p>
 
-            <label className="flex items-center justify-center gap-4 border border-white/10  w-full py-2 px-2 bg-transparent">
-              <FaCalendar /> PLANEJADO
-            </label>
+            <StatusPhaseBadge status="PLANEJADO" />
           </div>
         </Accordion>
       </div>
