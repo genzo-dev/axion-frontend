@@ -29,7 +29,7 @@ export default function PhasesSection() {
               O que está por vir
             </h2>
             <p className="">
-              O projeto Axion está divido em 6 fases (0 - 5), onde cada uma só
+              O projeto Axion está dividido em 6 fases (0 - 5), onde cada uma só
               deve ser implementada após a anterior ser concluída.
             </p>
 
@@ -46,7 +46,7 @@ export default function PhasesSection() {
             O que está por vir
           </h2>
           <p className="xl:max-w-1/2">
-            O projeto Axion está divido em 6 fases (0 - 5), onde cada uma só
+            O projeto Axion está dividido em 6 fases (0 - 5), onde cada uma só
             deve ser implementada após a anterior ser concluída.
           </p>
 

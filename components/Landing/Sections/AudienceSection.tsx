@@ -24,7 +24,7 @@ export default function AudienceSection() {
           <div className="relative w-full h-64 sm:h-80 lg:h-full bg-white/10">
             <Image
               src="/students.jpg"
-              alt="sla"
+              alt="Estudantes buscando mais conhecimento"
               fill
               className="object-cover"
             />
@@ -78,7 +78,12 @@ export default function AudienceSection() {
           </div>
           <div className=" w-0.5 bg-[#ff4f00] hidden lg:block lg:order-2"></div>
           <div className="relative w-full h-64 sm:h-80 lg:h-full bg-white/10 bg-white/10 order-1 lg:order-3">
-            <Image src="/tests.jpg" alt="sla" fill className="object-cover" />
+            <Image
+              src="/tests.jpg"
+              alt="Profissional analisando materiais de estudo"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>

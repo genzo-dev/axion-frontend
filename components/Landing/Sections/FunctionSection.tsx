@@ -11,14 +11,14 @@ export default function FunctionSection() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 font-dm-sans">
-        <Card title="1. Crie sua trilha" url="#">
+        <Card title="1. Crie sua trilha" url="#roadmap">
           {" "}
           <p className="mb-4 text-sm">
             Monte roteiros de estudo com módulos, links e recursos. Pode ser um
             guia público para a comunidade ou seu registro pessoal privado.
           </p>
         </Card>
-        <Card title="2. Compartilhe conhecimento" url="#">
+        <Card title="2. Compartilhe conhecimento" url="#roadmap">
           {" "}
           <p className="mb-4 text-sm">
             Publique sua trilha para que a comunidade possa interagir, ajudando
@@ -30,7 +30,7 @@ export default function FunctionSection() {
             conquistas.
           </p>
         </Card>
-        <Card title="3. Estude no seu ritmo" url="#">
+        <Card title="3. Estude no seu ritmo" url="#roadmap">
           {" "}
           <p className="mb-4 text-sm">
             Siga trilhas curadas pela comunidade, marque seu progresso e evolua

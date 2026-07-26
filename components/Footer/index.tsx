@@ -14,7 +14,9 @@ export default function Footer() {
         <span className="">
           Desenvolvido por{" "}
           <Link
-            href="#"
+            target="_blanck"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/genzo-dev/"
             className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
           >
             Gabriel Enzo (genzo-dev.)
@@ -27,31 +29,31 @@ export default function Footer() {
           <label className="font-bold text-lg mb-4">Institucional</label>
           <div className="flex flex-col gap-2 text-sm">
             <Link
-              href="#"
+              href="about"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
               Sobre
             </Link>
             <Link
-              href="#"
+              href="/#purpose"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
-              Problema
+              Propósito
             </Link>
             <Link
-              href="#"
+              href="/#how-it-works"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
               Funcionamento
             </Link>
             <Link
-              href="#"
+              href="/#audience"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
               Público
             </Link>
             <Link
-              href="#"
+              href="/#roadmap"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
               Roadmap
@@ -86,7 +88,7 @@ export default function Footer() {
               Entrar
             </Link>
             <Link
-              href="#"
+              href="/trails/favorite"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
               Trilhas favoritas
@@ -98,19 +100,19 @@ export default function Footer() {
           <label className="font-bold text-lg mb-4">Ajuda</label>
           <div className="flex flex-col gap-2 text-sm">
             <Link
-              href="#"
+              href="privacy-policy"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
               Políticas de Privacidade
             </Link>
             <Link
-              href="#"
+              href="security"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
               Segurança
             </Link>
             <Link
-              href="#"
+              href="terms-of-use"
               className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
             >
               Termos de Uso
