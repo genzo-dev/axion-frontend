@@ -34,7 +34,7 @@ export default function ScrollToTopButton() {
         <button
           onClick={scrollToTop}
           className={clsx(
-            "font-manrope shadow-2xl border border-black bg-[#ff4f00] hover:brightness-75 cursor-pointer w-full lg:w-auto px-0.5 py-0.5 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
+            "font-dm-sans shadow-2xl border border-black bg-[#ff4f00] hover:brightness-75 cursor-pointer w-full lg:w-auto px-0.5 py-0.5 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
           )}
         >
           <RiArrowDropUpLine size={36} />

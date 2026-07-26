@@ -2,7 +2,7 @@ import { TextLoop } from "../motion-primitives/text-loop";
 
 export function TextLoopCustom() {
   return (
-    <h1 className="text-center font-manrope text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold">
+    <h1 className="text-center font-dm-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold">
       {" "}
       Organize o conhecimento disperso da internet em{" "}
       <TextLoop

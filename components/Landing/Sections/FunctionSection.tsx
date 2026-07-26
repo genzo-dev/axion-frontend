@@ -6,11 +6,11 @@ export default function FunctionSection() {
       id="how-it-works"
       className="scroll-mt-30 flex flex-col items-center py-12 px-6 sm:px-12 lg:px-10 2xl:px-40 gap-8"
     >
-      <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-manrope text-center py-12">
+      <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-dm-sans text-center py-12">
         Como o Axion vai funcionar?
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 font-manrope">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 font-dm-sans">
         <Card title="1. Crie sua trilha" url="#">
           {" "}
           <p className="mb-4 text-sm">

@@ -9,8 +9,8 @@ export default function AudienceSection() {
       id="audience"
       className="scroll-mt-30 px-6 sm:px-12 lg:px-10 2xl:px-40"
     >
-      <div className="flex flex-col items-start py-12 lg:max-w-1/2 font-manrope">
-        <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-manrope md:text-center md:pt-12">
+      <div className="flex flex-col items-start py-12 lg:max-w-1/2 font-dm-sans">
+        <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-dm-sans md:text-center md:pt-12">
           Para quem é o Axion?
         </h2>
         <p>Feito por autodidatas, para autodidatas</p>
@@ -34,16 +34,16 @@ export default function AudienceSection() {
             <div className="flex items-center gap-4 mb-8">
               <div
                 className={clsx(
-                  "font-manrope bg-[#ff4f00] w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
+                  "font-dm-sans bg-[#ff4f00] w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
                 )}
               >
                 <FaBook size={24} />
               </div>
-              <h3 className="font-manrope font-bold text-lg">
+              <h3 className="font-dm-sans font-bold text-lg">
                 Autodidatas e estudantes independentes
               </h3>
             </div>
-            <p className="font-manrope">
+            <p className="font-dm-sans">
               Você aprendeu cedo que não precisa de permissão para estudar. Mas
               aprender sozinho não significa aprender desorganizado. O Axion é o
               mapa que transforma a sopa de abas e links soltos em uma jornada
@@ -58,16 +58,16 @@ export default function AudienceSection() {
             <div className="flex items-center gap-4 mb-8 lg:mt-0">
               <div
                 className={clsx(
-                  "font-manrope bg-[#ff4f00] w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
+                  "font-dm-sans bg-[#ff4f00] w-auto px-3 py-3 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-black transition",
                 )}
               >
                 <MdGroups2 size={24} />
               </div>
-              <h3 className="font-manrope font-bold text-lg">
+              <h3 className="font-dm-sans font-bold text-lg">
                 Profissionais que buscam aprendizado contínuo
               </h3>
             </div>
-            <p className="font-manrope">
+            <p className="font-dm-sans">
               Você sabe que parar de aprender não é opção. Mas entre entregas e
               prazos, sobra pouco tempo para garimpar o que realmente vale a
               pena. O Axion entrega curadoria feita por quem domina o assunto —

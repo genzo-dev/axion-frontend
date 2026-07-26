@@ -18,7 +18,7 @@ export default function Accordion({ title, children }: AccrodionProps) {
         onClick={() => setOpen(!open)}
         data-cursor="pointer"
         className={clsx(
-          "flex font-manrope font-bold items-center justify-between border-white/30 text-start px-4 py-4 cursor-pointer gap-4",
+          "flex font-dm-sans font-bold items-center justify-between border-white/30 text-start px-4 py-4 cursor-pointer gap-4",
           open
             ? "border-t border-x text-[#ff4f00]"
             : "border text-white/70 group-hover:text-white",
@@ -39,7 +39,7 @@ export default function Accordion({ title, children }: AccrodionProps) {
       {open && (
         <div
           className={clsx(
-            "border font-manrope border-white/30 border-t-0 px-4 py-4 text-start",
+            "border font-dm-sans border-white/30 border-t-0 px-4 py-4 text-start",
           )}
         >
           {children}

@@ -24,8 +24,8 @@ export default function PhasesSection() {
       {isLg ? (
         <StickyBox offsetTop={120}>
           {" "}
-          <div className="flex flex-col w-full lg:flex-1 2xl:max-w-1/2 items-start font-manrope pb-12 lg:pb-0">
-            <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-manrope ">
+          <div className="flex flex-col w-full lg:flex-1 2xl:max-w-1/2 items-start font-dm-sans pb-12 lg:pb-0">
+            <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-dm-sans ">
               O que está por vir
             </h2>
             <p className="">
@@ -41,8 +41,8 @@ export default function PhasesSection() {
           </div>
         </StickyBox>
       ) : (
-        <div className="flex flex-col w-full lg:flex-1 xl:max-w-1/2 items-start font-manrope pb-12 lg:pb-0">
-          <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-manrope text-start ">
+        <div className="flex flex-col w-full lg:flex-1 xl:max-w-1/2 items-start font-dm-sans pb-12 lg:pb-0">
+          <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-dm-sans text-start ">
             O que está por vir
           </h2>
           <p className="xl:max-w-1/2">

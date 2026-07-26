@@ -3,18 +3,8 @@ import { DM_Sans, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-// TODO: ALTERAR VARIAVEL DE FONTE
 const manrope = DM_Sans({
-  variable: "--font-manrope",
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
@@ -68,11 +58,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col font-manrope">
+    <html lang="pt-BR" className={`${manrope.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-dm-sans">
         <main>
           {children}
           <Footer />

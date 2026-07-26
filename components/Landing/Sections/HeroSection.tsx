@@ -18,7 +18,7 @@ export default function HeroSection() {
         id="hero"
         className="absolute inset-0 flex flex-col items-center justify-center text-neutral-100 text-center gap-8 lg:gap-16 px-6 lg:px-20 2xl:px-72"
       >
-        {/* <h1 className="font-manrope text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold ">
+        {/* <h1 className="font-dm-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold ">
             Organize o conhecimento disperso da internet em trilhas de estudo
           </h1> */}
         <TextLoopCustom />
@@ -30,7 +30,7 @@ export default function HeroSection() {
 
         <Link
           href="/discover"
-          className="font-manrope bg-[#ff4f00] hover:brightness-75 px-4 lg:px-12 py-2 lg:py-3 font-bold text-black sm:text-lg transition"
+          className="font-dm-sans bg-[#ff4f00] hover:brightness-75 px-4 lg:px-12 py-2 lg:py-3 font-bold text-black sm:text-lg transition"
         >
           Explorar Trilhas
         </Link>
