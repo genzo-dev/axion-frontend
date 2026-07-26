@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { DM_Sans, Geist, Geist_Mono, Manrope } from "next/font/google";
+import { DM_Sans, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ScrollToTopButton from "@/components/Buttons/ScrollToTopButton";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
@@ -22,7 +21,7 @@ const manrope = DM_Sans({
 export const metadata: Metadata = {
   title: {
     default: "Axion",
-    template: "Axion  | %s",
+    template: "Axion - %s",
   },
   description:
     "Axion — plataforma aberta de trilhas de estudo. Crie, compartilhe e descubra rotas de aprendizado organizadas.",
@@ -57,6 +56,10 @@ export const metadata: Metadata = {
     description: "Axion — plataforma aberta de trilhas de estudo.",
     images: ["/images/axion_banner.png"],
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -73,7 +76,6 @@ export default function RootLayout({
         <main>
           {children}
           <Footer />
-          <ScrollToTopButton />
         </main>
       </body>
     </html>
