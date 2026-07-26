@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Logo from "../Logo";
+import FooterLink from "../Links/FooterLink";
 
 export default function Footer() {
   return (
@@ -13,14 +13,9 @@ export default function Footer() {
 
         <span className="">
           Desenvolvido por{" "}
-          <Link
-            target="_blanck"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/genzo-dev/"
-            className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-          >
+          <FooterLink blank href="https://www.linkedin.com/in/genzo-dev/">
             Gabriel Enzo (genzo-dev.)
-          </Link>
+          </FooterLink>
         </span>
         {/* <span className="">2026 © Todos os direitos reservados.</span> */}
       </div>
@@ -28,95 +23,32 @@ export default function Footer() {
         <div className="flex flex-col">
           <label className="font-bold text-lg mb-4">Institucional</label>
           <div className="flex flex-col gap-2 text-sm">
-            <Link
-              href="about"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Sobre
-            </Link>
-            <Link
-              href="/#purpose"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Propósito
-            </Link>
-            <Link
-              href="/#how-it-works"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Funcionamento
-            </Link>
-            <Link
-              href="/#audience"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Público
-            </Link>
-            <Link
-              href="/#roadmap"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Roadmap
-            </Link>
+            <FooterLink href="/about">Sobre</FooterLink>
+            <FooterLink href="/#purpose">Propósito</FooterLink>
+            <FooterLink href="/#how-it-works">Funcionamento</FooterLink>
+            <FooterLink href="/#audience">Público</FooterLink>
+            <FooterLink href="/#roadmap">Roadmap</FooterLink>
           </div>
         </div>
         <div className="flex flex-col">
           <label className="font-bold text-lg mb-4">Plataforma</label>
           <div className="flex flex-col gap-2 text-sm">
-            <Link
-              href="/discover"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Explorar trilhas
-            </Link>
-            <Link
-              href="/trails/create"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Criar trilha
-            </Link>
-            <Link
-              href="/register"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Cadastrar-se
-            </Link>
-            <Link
-              href="/login"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Entrar
-            </Link>
-            <Link
-              href="/trails/favorite"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Trilhas favoritas
-            </Link>
+            <FooterLink href="/discover">Explorar trilhas</FooterLink>
+            <FooterLink href="/trails/create">Criar trilha</FooterLink>
+            <FooterLink href="/register">Cadastrar-se</FooterLink>
+            <FooterLink href="/login">Entrar</FooterLink>
+            <FooterLink href="/trails/favorite">Trilhas favoritas</FooterLink>
           </div>
         </div>
 
         <div className="flex flex-col">
           <label className="font-bold text-lg mb-4">Ajuda</label>
           <div className="flex flex-col gap-2 text-sm">
-            <Link
-              href="privacy-policy"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
+            <FooterLink href="privacy-policy">
               Políticas de Privacidade
-            </Link>
-            <Link
-              href="security"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Segurança
-            </Link>
-            <Link
-              href="terms-of-use"
-              className="brightness-75 hover:brightness-100 hover:text-[#ff4f00]"
-            >
-              Termos de Uso
-            </Link>
+            </FooterLink>
+            <FooterLink href="security">Segurança</FooterLink>
+            <FooterLink href="terms-of-use">Termos de Uso</FooterLink>
           </div>
         </div>
       </div>
