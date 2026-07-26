@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { FaCalendar, FaCheck } from "react-icons/fa6";
 import { RiProgress6Line } from "react-icons/ri";
 import StickyBox from "react-sticky-box";
+import LandingSectionWrapper from "../LandingSectionWrapper";
 
 export default function PhasesSection() {
   const [isLg, setIsLg] = useState(false);
@@ -17,9 +18,9 @@ export default function PhasesSection() {
   }, []);
 
   return (
-    <section
+    <LandingSectionWrapper
       id="roadmap"
-      className="scroll-mt-30 flex flex-col lg:flex-row lg:gap-24 items-center lg:items-start lg:justify-between px-6 sm:px-12 lg:px-10 2xl:px-40 py-24"
+      className="flex flex-col lg:flex-row lg:gap-24 items-center lg:items-start lg:justify-between  py-24"
     >
       {isLg ? (
         <StickyBox offsetTop={120}>
@@ -154,6 +155,6 @@ export default function PhasesSection() {
           </div>
         </Accordion>
       </div>
-    </section>
+    </LandingSectionWrapper>
   );
 }

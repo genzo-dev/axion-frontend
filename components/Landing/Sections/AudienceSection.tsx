@@ -2,13 +2,11 @@ import clsx from "clsx";
 import Image from "next/image";
 import { FaBook } from "react-icons/fa6";
 import { MdGroups2 } from "react-icons/md";
+import LandingSectionWrapper from "../LandingSectionWrapper";
 
 export default function AudienceSection() {
   return (
-    <section
-      id="audience"
-      className="scroll-mt-30 px-6 sm:px-12 lg:px-10 2xl:px-40"
-    >
+    <LandingSectionWrapper id="audience">
       <div className="flex flex-col items-start py-12 lg:max-w-1/2 font-dm-sans">
         <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-dm-sans md:text-center md:pt-12">
           Para quem é o Axion?
@@ -85,6 +83,6 @@ export default function AudienceSection() {
           </div>
         </div>
       </div>
-    </section>
+    </LandingSectionWrapper>
   );
 }

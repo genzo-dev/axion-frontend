@@ -1,10 +1,11 @@
 import Card from "../Card";
+import LandingSectionWrapper from "../LandingSectionWrapper";
 
 export default function FunctionSection() {
   return (
-    <section
+    <LandingSectionWrapper
       id="how-it-works"
-      className="scroll-mt-30 flex flex-col items-center py-12 px-6 sm:px-12 lg:px-10 2xl:px-40 gap-8"
+      className="flex flex-col items-center gap-8 py-12"
     >
       <h2 className="text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-dm-sans text-center py-12">
         Como o Axion vai funcionar?
@@ -51,6 +52,6 @@ export default function FunctionSection() {
           </span>
         </div>
       </div>
-    </section>
+    </LandingSectionWrapper>
   );
 }
