@@ -7,10 +7,24 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 type AccrodionProps = {
   title: string;
   children: React.ReactNode;
+  reverse?: boolean;
+  titleSize?: "sm" | "base" | "lg" | "xl";
 };
 
-export default function Accordion({ title, children }: AccrodionProps) {
+export default function Accordion({
+  title,
+  children,
+  reverse = false,
+  titleSize = "base",
+}: AccrodionProps) {
   const [open, setOpen] = useState(false);
+
+  const titleSizes = {
+    sm: "text-sm",
+    base: "text-base",
+    lg: "text-lg",
+    xl: "text-base lg:text-xl",
+  };
 
   return (
     <div className="group">
@@ -22,6 +36,7 @@ export default function Accordion({ title, children }: AccrodionProps) {
           open
             ? "border-t border-x text-primary"
             : "border text-white/70 group-hover:text-white",
+          reverse && "flex-row-reverse",
         )}
       >
         <div className="relative w-4 h-4 shrink-0">
@@ -34,7 +49,15 @@ export default function Accordion({ title, children }: AccrodionProps) {
           />
         </div>
 
-        <label className="text-base text-end cursor-pointer">{title}</label>
+        <span
+          className={clsx(
+            "cursor-pointer",
+            titleSizes[titleSize],
+            reverse ? "text-start" : "text-end",
+          )}
+        >
+          {title}
+        </span>
       </div>
       {open && (
         <div

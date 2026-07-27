@@ -9,35 +9,84 @@
   <img src="https://img.shields.io/badge/escopo-TCC-green" alt="TCC Scope"/>
 </p>
 
-Frontend do **Axion** — plataforma aberta de trilhas de estudo para autodidatas.
+Frontend do **Axion** — plataforma aberta de trilhas de estudo para autodidatas. Crie, compartilhe e descubra rotas de aprendizado organizadas.
 
 > Para uma visão geral do projeto, acesse o [hub oficial](https://github.com/genzo-dev/axion_hub).
 
+---
+
+## Funcionalidades
+
+- **Landing page** com seções de propósito, funcionamento, público-alvo e roadmap
+- **Navbar responsiva** com menu mobile e links de navegação
+- **Footer** com links institucionais, da plataforma e de ajuda
+- **SEO completo** — Open Graph, Twitter cards, sitemap, robots.txt, PWA manifest
+- **Design system** com variáveis CSS via Tailwind v4 `@theme inline`
+- **404 personalizada**
+
+---
+
 ## Tecnologias
 
-- [Next.js](https://nextjs.org/) (App Router)
-- [Tailwind CSS](https://tailwindcss.com/) v4
-- [TypeScript](https://www.typescriptlang.org/)
+| Ferramenta                                                | Versão  |
+| --------------------------------------------------------- | ------- |
+| [Next.js](https://nextjs.org/) (App Router)               | 16.2.11 |
+| [React](https://react.dev/)                               | 19.2.4  |
+| [TypeScript](https://www.typescriptlang.org/)             | 5       |
+| [Tailwind CSS](https://tailwindcss.com/)                  | v4      |
+| [Motion](https://motion.dev/) (Framer Motion)             | —       |
+| [react-icons](https://react-icons.github.io/react-icons/) | —       |
+| [clsx](https://github.com/lukeed/clsx)                    | —       |
+
+---
 
 ## Como rodar
 
-1. Instale as dependências:
-
 ```bash
 npm install
-```
-
-2. Inicie o servidor de desenvolvimento:
-
-```bash
 npm run dev
 ```
 
-3. Acesse [http://localhost:3000](http://localhost:3000).
+Acesse [http://localhost:3000](http://localhost:3000).
 
-<!-- ## Landing Page
+---
 
-A copy completa da landing page está em [`LANDING_PAGE_COPY.md`](./LANDING_PAGE_COPY.md), organizada por seções (Hero, Problema, Como funciona, Funcionalidades, etc.) com textos prontos e especificações da NavBar. -->
+## Scripts disponíveis
+
+| Comando         | Descrição                          |
+| --------------- | ---------------------------------- |
+| `npm run dev`   | Inicia servidor de desenvolvimento |
+| `npm run build` | Gera build de produção             |
+| `npm start`     | Inicia servidor de produção        |
+| `npm run lint`  | Executa ESLint                     |
+
+---
+
+## Estrutura do projeto
+
+```
+app/              # Páginas e layouts (App Router)
+components/       # Componentes React reutilizáveis
+docs/             # Documentação interna do frontend
+lib/              # Utilitários (em construção)
+public/           # Assets estáticos
+```
+
+---
+
+## Documentação interna
+
+A documentação detalhada do frontend está em `docs/`:
+
+| Documento                                 | Descrição                                       |
+| ----------------------------------------- | ----------------------------------------------- |
+| [COMPONENTS.md](docs/COMPONENTS.md)       | Catálogo de componentes com props e exemplos    |
+| [DESIGN_TOKENS.md](docs/DESIGN_TOKENS.md) | Design tokens — cores, tipografia, espaçamentos |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md)   | Estrutura do projeto, stack e fluxo de dados    |
+| [API.md](docs/API.md)                     | Consumo da API do backend (esboço)              |
+| [DEPLOY.md](docs/DEPLOY.md)               | Guia de deploy e ambiente                       |
+
+---
 
 ## Repositórios relacionados
 
@@ -46,6 +95,8 @@ A copy completa da landing page está em [`LANDING_PAGE_COPY.md`](./LANDING_PAGE
 | [axion_hub](https://github.com/genzo-dev/axion_hub)         | Hub central do projeto |
 | [axion-backend](https://github.com/genzo-dev/axion-backend) | API backend            |
 | [axion-docs](https://github.com/genzo-dev/axion-docs)       | Documentação geral     |
+
+---
 
 ## Autor
 
