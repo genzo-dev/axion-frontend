@@ -1,130 +1,130 @@
-# Frontend Architecture
+# Arquitetura do Frontend
 
-> Project structure, technical decisions, and data flow.
+> Estrutura do projeto, decisões técnicas e fluxo de dados.
 
 ---
 
-## Tech Stack
+## Stack Tecnológica
 
-| Layer | Technology |
-|-------|-----------|
+| Camada | Tecnologia |
+|--------|-----------|
 | Framework | Next.js 16 (App Router) |
-| Language | TypeScript 5 |
-| Styling | Tailwind CSS v4 |
-| Animation | Motion (Framer Motion) |
-| Icons | react-icons |
-| Utilities | clsx |
+| Linguagem | TypeScript 5 |
+| Estilização | Tailwind CSS v4 |
+| Animação | Motion (Framer Motion) |
+| Ícones | react-icons |
+| Utilitários | clsx |
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
-app/               # Next.js App Router pages and layouts
-├── layout.tsx     # Root layout (fonts, metadata, Footer)
-├── not-found.tsx  # Custom 404 page
-├── globals.css    # Tailwind import + CSS variables
-├── sitemap.ts     # Dynamic sitemap generator
-├── robots.txt     # SEO directives
-├── (main)/        # Route group for main pages
-│   ├── layout.tsx # Group layout (ScrollToTopButton)
+app/               # Páginas e layouts do Next.js App Router
+├── layout.tsx     # Layout raiz (fontes, metadados, Footer)
+├── not-found.tsx  # Página 404 personalizada
+├── globals.css    # Import do Tailwind + variáveis CSS
+├── sitemap.ts     # Gerador de sitemap dinâmico
+├── robots.txt     # Diretivas SEO
+├── (main)/        # Grupo de rotas para páginas principais
+│   ├── layout.tsx # Layout do grupo (ScrollToTopButton)
 │   └── page.tsx   # Landing page
 
-components/        # All React components
+components/        # Todos os componentes React
 ├── Accordion/
 ├── Buttons/
 ├── Footer/
 ├── Landing/
 │   ├── Card.tsx
 │   ├── LandingSectionWrapper.tsx
-│   └── Sections/   # Landing page sections
+│   └── Sections/   # Seções da landing page
 ├── Logo/
 ├── Navbar/
 ├── TextLoopCustom/
 └── motion-primitives/
 
-docs/              # Internal frontend documentation
-lib/               # Utility functions (empty — to be populated)
-public/            # Static assets served by Next.js
+docs/              # Documentação interna do frontend
+lib/               # Funções utilitárias (vazio — a ser populado)
+public/            # Assets estáticos servidos pelo Next.js
 ```
 
 ---
 
-## Routing
+## Roteamento
 
-### Route Groups
+### Grupos de Rotas
 
-The project uses a route group `(main)` to apply a shared layout (with `ScrollToTopButton`) to the main pages without affecting the URL structure.
+O projeto usa um grupo de rotas `(main)` para aplicar um layout compartilhado (com `ScrollToTopButton`) às páginas principais sem afetar a estrutura da URL.
 
-### Current Routes
+### Rotas Atuais
 
-| Route | Page | Status |
-|-------|------|--------|
-| `/` | Landing page | ✅ Implemented |
-| `/404` | Not found | ✅ Implemented |
-| `/discover` | Trail discovery | 🔜 Planned |
-| `/login` | Login | 🔜 Planned |
-| `/register` | Registration | 🔜 Planned |
-
----
-
-## Patterns
-
-### Server Components by Default
-
-Components are **Server Components** unless they need interactivity. `"use client"` is used only for:
-
-- `Navbar/index.tsx` — menu toggle, scroll effects
-- `PhasesSection.tsx` — responsive breakpoint state
-- `ScrollToTopButton.tsx` — scroll position tracking
-- `Accordion/index.tsx` — open/close state
-- `motion-primitives/text-loop.tsx` — animation state
-
-### Styling Pattern
-
-- Use Tailwind utility classes directly
-- CSS variables for design tokens (defined in `globals.css` `@theme inline`)
-- `clsx` for conditional class merging
-
-### Component Convention
-
-- Each component in its own directory with `index.tsx`
-- Props typed with TypeScript (inline types for now)
-- Shared types go in the component file itself
+| Rota | Página | Status |
+|------|--------|--------|
+| `/` | Landing page | ✅ Implementada |
+| `/404` | Não encontrado | ✅ Implementada |
+| `/discover` | Descoberta de trilhas | 🔜 Planejada |
+| `/login` | Login | 🔜 Planejada |
+| `/register` | Cadastro | 🔜 Planejada |
 
 ---
 
-## Data Flow
+## Padrões
 
-> **Currently:** No global state management. All state is local via `useState` and `useEffect`.
+### Server Components por Padrão
+
+Os componentes são **Server Components** a menos que precisem de interatividade. `"use client"` é usado apenas para:
+
+- `Navbar/index.tsx` — toggle de menu, efeitos de scroll
+- `PhasesSection.tsx` — estado de breakpoint responsivo
+- `ScrollToTopButton.tsx` — rastreamento de posição de scroll
+- `Accordion/index.tsx` — estado de abrir/fechar
+- `motion-primitives/text-loop.tsx` — estado de animação
+
+### Padrão de Estilização
+
+- Use classes utilitárias do Tailwind diretamente
+- Variáveis CSS para design tokens (definidas em `globals.css` no `@theme inline`)
+- `clsx` para mesclagem condicional de classes
+
+### Convenção de Componentes
+
+- Cada componente em seu próprio diretório com `index.tsx`
+- Props tipadas com TypeScript (tipos inline por enquanto)
+- Tipos compartilhados ficam no próprio arquivo do componente
+
+---
+
+## Fluxo de Dados
+
+> **Atualmente:** Sem gerenciamento de estado global. Todo estado é local via `useState` e `useEffect`.
 
 ```
-                  ┌─────────────┐
-                  │   Backend   │
-                  │ (axion-api) │
-                  └──────┬──────┘
-                         │ HTTP (future)
-                  ┌──────▼──────┐
-                  │   API Layer │
-                  │   (lib/)    │
-                  └──────┬──────┘
-                         │
-                  ┌──────▼──────┐
-                  │   Page      │
-                  │ (Server)    │
-                  └──────┬──────┘
-                         │ props
-                  ┌──────▼──────┐
-                  │  Component  │
-                  │ (Client)    │
-                  └─────────────┘
+                   ┌─────────────┐
+                   │   Backend   │
+                   │ (axion-api) │
+                   └──────┬──────┘
+                          │ HTTP (futuro)
+                   ┌──────▼──────┐
+                   │  Camada API │
+                   │   (lib/)    │
+                   └──────┬──────┘
+                          │
+                   ┌──────▼──────┐
+                   │   Página    │
+                   │ (Servidor)  │
+                   └──────┬──────┘
+                          │ props
+                   ┌──────▼──────┐
+                   │  Componente │
+                   │ (Cliente)   │
+                   └─────────────┘
 ```
 
 ---
 
-## Future Considerations
+## Considerações Futuras
 
-- State management (Zustand or Context for auth/trails)
-- API service layer in `lib/`
-- Custom hooks for data fetching
-- Shared type definitions in `types/`
+- Gerenciamento de estado (Zustand ou Context para autenticação/trilhas)
+- Camada de serviço de API em `lib/`
+- Hooks personalizados para busca de dados
+- Definições de tipos compartilhados em `types/`

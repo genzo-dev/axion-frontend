@@ -9,6 +9,7 @@ const dm_sans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://axion.gabrielenzo.com.br"),
   title: {
     default: "Axion",
     template: "Axion - %s",
@@ -58,6 +59,9 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/assets/axion-favicon/apple-touch-icon.png" }],
   },
+};
+
+export const viewport = {
   themeColor: "#000000",
 };
 

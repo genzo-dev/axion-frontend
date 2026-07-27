@@ -1,92 +1,92 @@
 # Design Tokens
 
-> Central source of truth for the project's visual decisions — colors, typography, spacing, and borders.
+> Fonte central da verdade para as decisões visuais do projeto — cores, tipografia, espaçamento e bordas.
 
 ---
 
-## Colors
+## Cores
 
-### Theme Variables
+### Variáveis de Tema
 
-Defined in `app/globals.css` via `@theme inline`:
+Definidas em `app/globals.css` via `@theme inline`:
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--color-background` | `#000000` | Page background |
-| `--color-foreground` | `#ededed` | Default text color |
-| `--color-primary` | `#ff4f00` | Buttons, highlights, icons, hover states, accent borders |
-| `--color-bg-component` | `#0c0c0c` | Navbar background |
-| `--color-bg-trasnparent` | `#0c0c0c67` | Navbar translucent background (desktop) |
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `--color-background` | `#000000` | Fundo da página |
+| `--color-foreground` | `#ededed` | Cor padrão do texto |
+| `--color-primary` | `#ff4f00` | Botões, destaques, ícones, estados de hover, bordas de destaque |
+| `--color-bg-component` | `#0c0c0c` | Fundo da Navbar |
+| `--color-bg-trasnparent` | `#0c0c0c67` | Fundo translúcido da Navbar (desktop) |
 
-> **Note:** These tokens need to be replaced with their semantic names (`--color-surface-nav`, `--color-surface-nav-translucent`). See [REFACTOR.md](../REFACTOR.md#53-mapeamento-de-substituição).
+> **Nota:** Esses tokens precisam ser substituídos por nomes semânticos (`--color-surface-nav`, `--color-surface-nav-translucent`). Veja [REFACTOR.md](../REFACTOR.md#53-mapeamento-de-substituição).
 
-### Base Colors
+### Cores Base
 
-| Token | Value |
+| Token | Valor |
 |-------|-------|
 | `white` | `#ffffff` |
 | `black` | `#000000` |
 | `neutral-100` | `#f5f5f5` |
 
-### Opacity Scale
+### Escala de Opacidade
 
-| Token | Usage |
-|-------|-------|
-| `white/5` | Subtle borders (hover) |
-| `white/10` | Default borders, subtle backgrounds |
-| `white/30` | Accordion borders |
-| `white/70` | Muted text |
+| Token | Uso |
+|-------|-----|
+| `white/5` | Bordas sutis (hover) |
+| `white/10` | Bordas padrão, fundos sutis |
+| `white/30` | Bordas do Accordion |
+| `white/70` | Texto secundário |
 
 ---
 
-## Typography
+## Tipografia
 
-### Font Families
+### Famílias de Fonte
 
-| Token | Font | Weight used |
-|-------|------|-------------|
+| Token | Fonte | Peso utilizado |
+|-------|-------|----------------|
 | `--font-dm-sans` | DM Sans | 400, 700, 800 |
 | `--font-geist-sans` | Geist Sans | 400 |
 | `--font-geist-mono` | Geist Mono | 400 |
 
-### Heading Scale
+### Escala de Títulos
 
-| Level | Classes |
+| Nível | Classes |
 |-------|---------|
-| Section title | `text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-dm-sans` |
-| Problem block title | `text-xl/relaxed md:text-2xl/relaxed lg:text-3xl/relaxed font-bold font-dm-sans` |
-| Section subtitle | `text-lg font-bold font-dm-sans` |
+| Título de seção | `text-xl sm:text-2xl md:text-3xl/relaxed font-bold font-dm-sans` |
+| Título de bloco de problema | `text-xl/relaxed md:text-2xl/relaxed lg:text-3xl/relaxed font-bold font-dm-sans` |
+| Subtítulo de seção | `text-lg font-bold font-dm-sans` |
 
 ---
 
-## Spacing
+## Espaçamento
 
-| Context | Value |
-|---------|-------|
-| Section horizontal padding | `px-6 sm:px-12 lg:px-10 2xl:px-40` |
-| Footer horizontal padding | `px-6 sm:px-12 lg:px-10 2xl:px-120` |
-| Section top/bottom padding | `py-12` or `py-24` |
-| Navbar padding | `py-4 sm:py-6 px-6 sm:px-12 lg:px-6 xl:px-12 2xl:px-14 lg:py-4` |
+| Contexto | Valor |
+|----------|-------|
+| Padding horizontal de seção | `px-6 sm:px-12 lg:px-10 2xl:px-40` |
+| Padding horizontal do Footer | `px-6 sm:px-12 lg:px-10 2xl:px-120` |
+| Padding superior/inferior de seção | `py-12` ou `py-24` |
+| Padding da Navbar | `py-4 sm:py-6 px-6 sm:px-12 lg:px-6 xl:px-12 2xl:px-14 lg:py-4` |
 
 ---
 
 ## Breakpoints
 
-| Name | Min-width | Used for |
-|------|-----------|----------|
-| `sm` | 640px | Mobile landscape |
+| Nome | Largura mínima | Uso |
+|------|----------------|-----|
+| `sm` | 640px | Mobile paisagem |
 | `md` | 768px | Tablet |
-| `lg` | 1024px | Desktop layout switch |
-| `xl` | 1280px | Wide desktop |
+| `lg` | 1024px | Troca para layout desktop |
+| `xl` | 1280px | Desktop amplo |
 | `2xl` | 1536px | Ultra-wide |
 
 ---
 
-## Borders
+## Bordas
 
-| Token | Usage |
-|-------|-------|
-| `border-white/10` | Default card/container borders |
-| `border-white/30` | Accordion borders |
-| `border-black` | ProblemSection headings |
-| `border-[#ff4f00]` | Highlight border (ProblemSection) |
+| Token | Uso |
+|-------|-----|
+| `border-white/10` | Bordas padrão de cartões/containers |
+| `border-white/30` | Bordas do Accordion |
+| `border-black` | Títulos da ProblemSection |
+| `border-[#ff4f00]` | Borda de destaque (ProblemSection) |

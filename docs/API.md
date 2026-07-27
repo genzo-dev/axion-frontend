@@ -1,16 +1,16 @@
-# API Consumption
+# Consumo de API
 
-> Communication between the frontend and the Axion backend.
+> Comunicação entre o frontend e o backend Axion.
 
 ---
 
 ## Status
 
-> **⚠️ Not yet implemented.** This document will be completed as the API layer is built.
+> **⚠️ Ainda não implementado.** Este documento será completado conforme a camada de API for construída.
 
 ---
 
-## Base URL
+## URL Base
 
 ```
 NEXT_PUBLIC_API_URL=https://api.axion.gabrielenzo.com.br
@@ -24,40 +24,40 @@ NEXT_PUBLIC_API_URL=http://localhost:3001
 
 ---
 
-## Authentication
+## Autenticação
 
-[To be documented — JWT flow, token storage, refresh logic, logout]
+[A ser documentado — fluxo JWT, armazenamento de token, lógica de refresh, logout]
 
 ---
 
 ## Endpoints
 
-| Method | Route | Description | Auth |
-|--------|-------|-------------|------|
-| POST | `/auth/login` | User login | No |
-| POST | `/auth/register` | User registration | No |
-| GET | `/trails` | List trails | Yes |
-| POST | `/trails` | Create trail | Yes |
-| GET | `/trails/:id` | Get trail details | Yes |
-| PUT | `/trails/:id` | Update trail | Yes |
-| DELETE | `/trails/:id` | Delete trail | Yes |
-| POST | `/trails/:id/like` | Like/unlike trail | Yes |
-| POST | `/trails/:id/favorite` | Favorite/unfavorite trail | Yes |
-| GET | `/trails/:id/comments` | List comments | Yes |
-| POST | `/trails/:id/comments` | Add comment | Yes |
+| Método | Rota | Descrição | Autenticação |
+|--------|------|-----------|-------------|
+| POST | `/auth/login` | Login do usuário | Não |
+| POST | `/auth/register` | Cadastro do usuário | Não |
+| GET | `/trails` | Listar trilhas | Sim |
+| POST | `/trails` | Criar trilha | Sim |
+| GET | `/trails/:id` | Obter detalhes da trilha | Sim |
+| PUT | `/trails/:id` | Atualizar trilha | Sim |
+| DELETE | `/trails/:id` | Deletar trilha | Sim |
+| POST | `/trails/:id/like` | Curtir/descurtir trilha | Sim |
+| POST | `/trails/:id/favorite` | Favoritar/desfavoritar trilha | Sim |
+| GET | `/trails/:id/comments` | Listar comentários | Sim |
+| POST | `/trails/:id/comments` | Adicionar comentário | Sim |
 
 ---
 
-## Shared Types
+## Tipos Compartilhados
 
 ```typescript
-// To be defined — User, Trail, Module, Comment, etc.
+// A ser definido — User, Trail, Module, Comment, etc.
 ```
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 ```typescript
-// To be documented — standard API error shape, frontend error handling strategy
+// A ser documentado — formato padrão de erro da API, estratégia de tratamento de erros no frontend
 ```

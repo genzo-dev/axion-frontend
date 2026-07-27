@@ -11,11 +11,11 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const containerStyle = clsx("rounded-full py-2 lg:py-0");
   const navLinkMap = [
-    { label: "Início", url: "#hero" },
-    { label: "Propósito", url: "#purpose" },
-    { label: "Funcionamento", url: "#how-it-works" },
-    { label: "Público", url: "#audience" },
-    { label: "Roadmap", url: "#roadmap" },
+    { label: "Início", url: "/#hero" },
+    { label: "Propósito", url: "/#purpose" },
+    { label: "Funcionamento", url: "/#how-it-works" },
+    { label: "Público", url: "/#audience" },
+    { label: "Roadmap", url: "/#roadmap" },
   ];
 
   function toggleMenu() {
