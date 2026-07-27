@@ -139,7 +139,11 @@ Sobre a **Fase 1 - MVP**:
 ## Autor
 
 <div align="center">
+<<<<<<< HEAD
   <img src="https://github.com/genzo-dev.png" alt="Gabriel Enzo (genzo-dev)" width="160"/>
+=======
+  <img src="https://github.com/genzo-dev.png" alt="Gabriel Enzo" width="160"/>
+>>>>>>> main
 </div>
 
 <div align="center">
@@ -147,9 +151,7 @@ Sobre a **Fase 1 - MVP**:
 </div>
 
 <div align="center">
-  <sub>
-    Fullstack web developer
-  </sub>
+  <sub>Fullstack web developer</sub>
 </div>
 
 &nbsp;
