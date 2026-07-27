@@ -1,16 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #000000;
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: #ff4f00;
+  --color-bg-component: #0c0c0c;
+  --color-bg-trasnparent: #0c0c0c67;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-manrope: var(--font-manrope);
+  --font-dm-sans: var(--font-dm-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +30,7 @@ body {
 }
 
 html {
-  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
 
 .menu-btn {
@@ -40,9 +43,7 @@ html {
   width: 18px;
   height: 1px;
   background-color: #ccc;
-  /* margin: 5px 0; */
   transition: 0.4s;
-  /* transform-origin: center; */
 }
 
 .menu-btn.active .line1 {
