@@ -2,8 +2,6 @@ import { DefaultButton } from "@/components/Buttons/DefaultButton";
 import { TextLoopCustom } from "@/components/TextLoopCustom";
 import clsx from "clsx";
 import Image from "next/image";
-import Link from "next/link";
-import { Md10K } from "react-icons/md";
 
 export default function HeroSection() {
   return (

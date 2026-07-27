@@ -2,7 +2,6 @@
 
 import clsx from "clsx";
 import { useState } from "react";
-import { MdKeyboardArrowUp } from "react-icons/md";
 
 type AccrodionProps = {
   title: string;

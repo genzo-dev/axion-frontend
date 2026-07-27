@@ -2,8 +2,6 @@
 
 import Accordion from "@/components/Accordion";
 import { useEffect, useState } from "react";
-import { FaCalendar, FaCheck } from "react-icons/fa6";
-import { RiProgress6Line } from "react-icons/ri";
 import StickyBox from "react-sticky-box";
 import LandingSectionWrapper from "../LandingSectionWrapper";
 import StatusPhaseBadge from "../StatusPhaseBadge";

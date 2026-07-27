@@ -8,15 +8,18 @@ export default function AboutPage() {
       <span className="text-sm">Última atualização: 26/07/2026</span>
       <div className="h-px w-full bg-primary my-8"></div>
       <section className="my-8">
-        <h1 className="text-2xl/relaxed font-bold">Por que "Axion"?</h1>
+        <h1 className="text-2xl/relaxed font-bold">
+          Por que &quot;Axion&quot;?
+        </h1>
         <p className="mt-4">
           Na física, o áxion é uma partícula elementar hipotética proposta nos
           anos 1970 para resolver um problema da cromodinâmica quântica (a tal
-          "CP forte"). Com o tempo, os físicos perceberam que, se o áxion
-          realmente existir, ele pode ser o principal componente da matéria
-          escura — aquela substância invisível que compõe cerca de 85% de toda a
-          matéria do universo. O áxion é pequeno. É invisível. É hipotético.
-          Mas, segundo a teoria, é ele que sustenta a estrutura do cosmos.
+          &quot;CP forte&quot;). Com o tempo, os físicos perceberam que, se o
+          áxion realmente existir, ele pode ser o principal componente da
+          matéria escura — aquela substância invisível que compõe cerca de 85%
+          de toda a matéria do universo. O áxion é pequeno. É invisível. É
+          hipotético. Mas, segundo a teoria, é ele que sustenta a estrutura do
+          cosmos.
         </p>
         <p className="mt-4">
           O Axion — a plataforma — se inspira nessa partícula. Cada trilha de
@@ -26,28 +29,6 @@ export default function AboutPage() {
           de conhecimento.
         </p>
       </section>
-
-      {/* <section className="mt-8">
-        <h1 className="text-2xl/relaxed font-bold">O problema</h1>
-        <p className="mt-4">
-          Autodidatas têm disciplina para estudar, mas perdem tempo filtrando
-          conteúdo duvidoso. As plataformas tradicionais são fechadas — apenas
-          instrutores aprovados podem criar conteúdo, ignorando a inteligência
-          coletiva da comunidade. Não existe um espaço onde aprendizes
-          organizem, compartilhem e descubram trilhas curadas por outros
-          autodidatas como eles.
-        </p>
-        <p className="mt-4">
-          Três problemas principais. Primeiro, plataformas como Udemy, Coursera
-          e Alura são fechadas — só instrutores aprovados criam cursos, e um
-          especialista nichado não pode compartilhar sem burocracia. Segundo,
-          autodidatas gastam em média 230 horas por ano filtrando conteúdo,
-          refazendo o trabalho que outros já fizeram. Terceiro, o conteúdo está
-          disperso — YouTube, Medium, documentação oficial, blogs — e não existe
-          um fio condutor que transforme esses fragmentos em uma jornada
-          coerente.
-        </p>
-      </section> */}
 
       <div className="flex flex-col gap-4">
         <section>

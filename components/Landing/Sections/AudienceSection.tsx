@@ -74,7 +74,7 @@ export default function AudienceSection() {
           <div className=" w-0.5 bg-primary hidden lg:block lg:order-2"></div>
           <div className="relative w-full h-64 sm:h-80 lg:h-full bg-white/10 bg-white/10 order-1 lg:order-3">
             <Image
-              src="/images/tests.jpg"
+              src="/images/pro-studies.jpg"
               alt="Profissional analisando materiais de estudo"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
