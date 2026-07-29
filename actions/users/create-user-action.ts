@@ -7,6 +7,7 @@ import {
   PublicUserSchema,
 } from "@/schemas/users/create-user-schema";
 import { apiRequest } from "@/utils/api-request";
+import { asyncDelay } from "@/utils/async-delay";
 import { getZodErrorMessages } from "@/utils/get-zod-error-messages";
 
 type CreateUserActionState = {
@@ -26,6 +27,8 @@ export async function createUserAction(
       success: false,
     };
   }
+
+  await asyncDelay(2000);
 
   const formObj = Object.fromEntries(formData.entries());
   const parsedFormData = CreateUserSchema.safeParse(formObj);
