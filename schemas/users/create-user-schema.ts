@@ -1,5 +1,11 @@
 import z from "zod";
 
+export const PublicUserSchema = z.object({
+  email: z.email("Informe um e-mail válido").default(""),
+  username: z.string().default(""),
+  name: z.string().default(""),
+});
+
 const CreateUserBase = z.object({
   email: z
     .email("Informe um e-mail válido")
@@ -30,3 +36,4 @@ export const CreateUserSchema = CreateUserBase.refine(
 });
 
 export type CreateUserDto = z.infer<typeof CreateUserSchema>;
+export type PublicUserDto = z.infer<typeof PublicUserSchema>;
