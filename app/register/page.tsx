@@ -1,4 +1,5 @@
 import CreateUserForm from "@/components/Forms/user/create-user-form";
+import Logo from "@/components/Logo";
 import clsx from "clsx";
 import Image from "next/image";
 
@@ -14,15 +15,20 @@ export default function RegisterPage() {
         priority
         className="w-full h-screen object-cover"
       />
-      <div
-        id="hero"
-        className={clsx(
-          "absolute inset-0 flex flex-col items-center justify-center text-center gap-8 px-6",
-          "text-neutral-100",
-          "lg:gap-16 lg:px-20 2xl:px-72",
-        )}
-      >
-        <CreateUserForm />
+      <div className="absolute inset-0 flex">
+        <div
+          id="hero"
+          className={clsx(
+            "flex w-full lg:w-1/2 xl:w-2/6 h-full  flex-col items-center justify-center",
+            "text-neutral-100",
+          )}
+        >
+          <CreateUserForm />
+        </div>
+
+        <div className="hidden lg:flex bg-black lg:w-1/2 xl:w-4/6 h-full items-center justify-center">
+          <Logo className="w-72!" />
+        </div>
       </div>
     </section>
   );

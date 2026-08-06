@@ -9,6 +9,7 @@ import {
 import { apiRequest } from "@/utils/api-request";
 import { asyncDelay } from "@/utils/async-delay";
 import { getZodErrorMessages } from "@/utils/get-zod-error-messages";
+import { redirect } from "next/navigation";
 
 type CreateUserActionState = {
   user: PublicUserDto;
@@ -57,9 +58,7 @@ export async function createUserAction(
     };
   }
 
-  return {
-    user: createUserResponse.data,
-    errors: [],
-    success: createUserResponse.success,
-  };
+  redirect(
+    `/verify-account?email=${encodeURIComponent(createUserResponse.data.email)}`,
+  );
 }

@@ -32,7 +32,7 @@ export default function InputText({
       {labelText && <label htmlFor={id}>{labelText}</label>}
 
       {prefix ? (
-        <div className="relative">
+        <div className="relative w-full">
           <span className="absolute left-4 top-1/2 -translate-y-1/2 text-white pointer-events-none select-none">
             {prefix}
           </span>
