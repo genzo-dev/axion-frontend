@@ -2,6 +2,7 @@
 
 import { DefaultButton } from "@/components/Buttons/DefaultButton";
 import SpinLoader from "@/components/Loader/SpinLoader";
+import clsx from "clsx";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 type ValidateAccountFormProps = {
@@ -22,13 +23,16 @@ export default function ValidateAccountForm({
       <input type="hidden" name="validateEmail" readOnly value={email} />
       <input type="hidden" name="validateCode" readOnly value={code} />
 
-      <DefaultButton type="submit" className="w-full" disabled={isPending}>
+      <DefaultButton
+        type="submit"
+        className="relative w-full border border-transparent"
+        disabled={isPending}
+      >
         <span
-          className={
-            isPending
-              ? "invisible"
-              : "visible flex items-center justify-center gap-2"
-          }
+          className={clsx(
+            "flex items-center justify-center gap-2",
+            isPending && "invisible",
+          )}
         >
           Verificar conta <MdOutlineArrowRightAlt />
         </span>
