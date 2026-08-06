@@ -43,7 +43,7 @@ export default async function VerifyAccountPage({ searchParams }: Props) {
           </div>
           <div className="flex flex-col gap-8">
             <div>
-              <h1 className="flex items-start justify-start font-bold text-lg sm:text-xl">
+              <h1 className="flex justify-center font-bold text-lg sm:text-xl">
                 Verificação de Conta
               </h1>
               <p className="text-sm mt-6">

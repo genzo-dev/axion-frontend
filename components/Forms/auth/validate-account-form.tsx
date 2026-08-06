@@ -30,7 +30,7 @@ export default function ValidateAccountForm({
               : "visible flex items-center justify-center gap-2"
           }
         >
-          Validar conta <MdOutlineArrowRightAlt />
+          Verificar conta <MdOutlineArrowRightAlt />
         </span>
 
         {isPending && <SpinLoader />}

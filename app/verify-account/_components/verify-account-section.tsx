@@ -8,6 +8,7 @@ import { FormError } from "@/components/Forms/FormError";
 import ValidateAccountForm from "@/components/Forms/auth/validate-account-form";
 import { validateAccountAction } from "@/actions/auth/validate-account-action";
 import { ValidateAccountSchema } from "@/schemas/auth/validate-account.schema";
+import OtpInput from "@/components/Inputs/OtpInput";
 
 type VerifyAccountSectionProps = {
   email: string;
@@ -40,16 +41,9 @@ export default function VerifyAccountSection({
 
   return (
     <>
-      <input
-        type="text"
-        name="validateCode"
-        value={code}
-        onChange={(e) => setCode(e.target.value)}
-        inputMode="numeric"
-        maxLength={6}
-        placeholder="Digite o código de validação..."
-        className="w-full h-12 px-4 text-center text-lg border border-white/30 bg-black text-white focus:border-primary outline-none"
-      />
+      <div className="flex justify-center">
+        <OtpInput lenght={6} value={code} onChange={setCode} />
+      </div>
 
       <div>
         <FormError message={errors[0]} className="mb-4" />
