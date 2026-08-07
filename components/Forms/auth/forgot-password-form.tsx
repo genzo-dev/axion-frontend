@@ -1,6 +1,6 @@
 "use client";
 
-import { forgotPasswordAction } from "@/actions/auth/forgot-password.action";
+import { forgotPasswordAction } from "@/actions/auth/forgot-password-action";
 import { DefaultButton } from "@/components/Buttons/DefaultButton";
 import InputText from "@/components/Inputs/InputText";
 import SpinLoader from "@/components/Loader/SpinLoader";
