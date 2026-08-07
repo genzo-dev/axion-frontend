@@ -25,13 +25,13 @@ export default function CreateUserForm() {
   return (
     <form
       action={action}
-      className="flex flex-col justify-between gap-4 w-full h-full bg-black py-24 px-6 sm:px-12 lg:px-6 2xl:px-12 font-dm-sans"
+      className="flex flex-col justify-center gap-4 w-full h-full bg-black border-r border-r-white/10 py-24 px-6 sm:px-12 lg:px-6 2xl:px-12 font-dm-sans"
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 bg-white/5 border border-white/10 px-12 py-12 rounded-lg">
         <div className="text-start pb-4 font-dm-sans">
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <Logo className="mb-20 w-28! sm:w-36!" />
-          </div>
+          </div> */}
           <h1 className="font-bold text-lg sm:text-xl">Cadastro</h1>
           <p className="text-sm mt-2">
             Realize seu cadastro e aproveite as melhores trilhas de estudo
@@ -51,12 +51,12 @@ export default function CreateUserForm() {
           labelText="E-mail:"
           type="text"
           name="email"
-          placeholder="Digite seu email..."
+          placeholder="nome@email.com"
           disabled={isPending}
           defaultValue={state.user?.email}
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
           <InputText
             labelText="Nome:"
             type="text"
@@ -87,7 +87,7 @@ export default function CreateUserForm() {
             labelText="Senha:"
             type="password"
             name="password"
-            placeholder="Digite sua senha..."
+            placeholder="********"
             disabled={isPending}
           />
 
@@ -95,7 +95,7 @@ export default function CreateUserForm() {
             labelText="Confirme a senha:"
             type="password"
             name="confirmPassword"
-            placeholder="Confirme sua senha..."
+            placeholder="********"
             disabled={isPending}
             maxLength={255}
           />
@@ -110,16 +110,19 @@ export default function CreateUserForm() {
 
           {isPending && <SpinLoader />}
         </DefaultButton>
+        <div className="flex items-end justify-center gap-2 pt-4">
+          <p>Já tem uma conta?</p>
+          <DefaultLink
+            href="/login"
+            className="decoration-0! text-white hover:text-primary font-bold"
+          >
+            Faça login
+          </DefaultLink>
+        </div>
       </div>
 
       <div className="flex items-end justify-center gap-2 pt-4 text-sm sm:text-base">
-        <p>Já tem uma conta?</p>
-        <DefaultLink
-          href="/login"
-          className="underline hover:decoration-primary text-white hover:text-white"
-        >
-          Faça login
-        </DefaultLink>
+        {/* <strong></strong> */}
       </div>
     </form>
   );

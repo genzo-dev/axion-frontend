@@ -19,7 +19,10 @@ export default function DefaultLink({
       href={href}
       target={blank ? "_blank" : undefined}
       rel={blank ? "noopener noreferrer" : undefined}
-      className={clsx("underline text-white hover:decoration-primary")}
+      className={clsx(
+        "underline text-white hover:decoration-primary",
+        className,
+      )}
     >
       {children}
     </Link>

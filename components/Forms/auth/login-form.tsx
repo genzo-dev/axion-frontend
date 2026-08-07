@@ -22,13 +22,13 @@ export default function LoginForm() {
   return (
     <form
       action={action}
-      className="flex flex-col justify-between gap-4 w-full h-full bg-black py-24 px-6 sm:px-12 lg:px-6 2xl:px-12 font-dm-sans"
+      className="flex flex-col justify-center gap-4 w-full h-full bg-black border-r border-r-white/10 py-24 px-6 sm:px-12 lg:px-6 2xl:px-12 font-dm-sans"
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 bg-white/5 border border-white/10 px-12 py-12 rounded-lg">
         <div className="text-start pb-4 font-dm-sans">
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <Logo className="mb-20 w-28! sm:w-36!" />
-          </div>
+          </div> */}
           <h1 className="font-bold text-lg sm:text-xl">Login</h1>
           <p className="text-sm mt-2">
             Bem-vindo(a) de volta! Acesse sua conta e continue seus estudos
@@ -62,25 +62,26 @@ export default function LoginForm() {
 
           {isPending && <SpinLoader />}
         </DefaultButton>
-      </div>
-      <div className="pt-4 text-sm sm:text-base">
-        <div className="flex items-end justify-center gap-2">
-          <p>Esqueceu a senha?</p>
-          <DefaultLink
-            href="/forgot-password"
-            className="underline hover:decoration-primary text-white hover:text-white"
-          >
-            Redefinir senha
-          </DefaultLink>
-        </div>
-        <div className="flex items-end justify-center gap-2 mt-2">
-          <p>Ainda não tem uma conta?</p>
-          <DefaultLink
-            href="/register"
-            className="underline hover:decoration-primary text-white hover:text-white"
-          >
-            Criar conta
-          </DefaultLink>
+
+        <div className="pt-4 text-sm sm:text-base">
+          <div className="flex items-end justify-center gap-2">
+            {/* <strong></strong> */}
+            <DefaultLink
+              href="/forgot-password"
+              className="decoration-0! text-white hover:text-primary font-bold"
+            >
+              Esqueceu a senha?
+            </DefaultLink>
+          </div>
+          <div className="flex items-end justify-center gap-2 mt-2">
+            <p>Ainda não tem uma conta?</p>
+            <DefaultLink
+              href="/register"
+              className="decoration-0! text-white hover:text-primary font-bold"
+            >
+              Criar conta
+            </DefaultLink>
+          </div>
         </div>
       </div>
     </form>

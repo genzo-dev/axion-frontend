@@ -29,13 +29,14 @@ export default function RegisterPage() {
         <div className="hidden lg:flex bg-black lg:w-1/2 xl:w-4/6 h-full items-center justify-center relative overflow-hidden">
           {/* <Logo className="w-72!" /> */}
           <Image
-            src="/images/pro-studies.jpg"
+            src="/images/auth-bg.png"
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
             alt="foto-profissionais-estudando"
             className="object-cover"
             priority
           />
+
+          <Logo className="absolute inset-0 m-auto lg:w-100! xl:w-130!" />
         </div>
       </div>
     </section>
