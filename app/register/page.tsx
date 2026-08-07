@@ -26,8 +26,16 @@ export default function RegisterPage() {
           <CreateUserForm />
         </div>
 
-        <div className="hidden lg:flex bg-black lg:w-1/2 xl:w-4/6 h-full items-center justify-center">
-          <Logo className="w-72!" />
+        <div className="hidden lg:flex bg-black lg:w-1/2 xl:w-4/6 h-full items-center justify-center relative overflow-hidden">
+          {/* <Logo className="w-72!" /> */}
+          <Image
+            src="/images/pro-studies.jpg"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="foto-profissionais-estudando"
+            className="object-cover"
+            priority
+          />
         </div>
       </div>
     </section>

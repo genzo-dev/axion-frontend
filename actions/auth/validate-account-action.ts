@@ -1,7 +1,6 @@
 "use server";
 
 import { setTokens } from "@/lib/auth/manage-auth-cookies";
-import { ResendValidationCodeDto } from "@/schemas/auth/resend-validation-code.schema";
 import {
   ValidateAccountDto,
   ValidateAccountSchema,

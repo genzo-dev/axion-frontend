@@ -25,7 +25,7 @@ export default function CreateUserForm() {
   return (
     <form
       action={action}
-      className="flex flex-col justify-between gap-4 w-full h-full bg-black/50 border-r border-r-white/10 py-24 px-6 sm:px-12 lg:px-6 2xl:px-12 font-dm-sans"
+      className="flex flex-col justify-between gap-4 w-full h-full bg-black py-24 px-6 sm:px-12 lg:px-6 2xl:px-12 font-dm-sans"
     >
       <div className="flex flex-col gap-4">
         <div className="text-start pb-4 font-dm-sans">
