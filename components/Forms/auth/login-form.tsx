@@ -67,7 +67,7 @@ export default function LoginForm() {
         <div className="flex items-end justify-center gap-2">
           <p>Esqueceu a senha?</p>
           <DefaultLink
-            href="/login"
+            href="/forgot-password"
             className="underline hover:decoration-primary text-white hover:text-white"
           >
             Redefinir senha
