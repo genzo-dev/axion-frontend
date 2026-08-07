@@ -47,7 +47,7 @@ export default function OtpInput({ lenght, value, onChange }: OtpInputProps) {
   };
 
   return (
-    <div className="flex gap-4">
+    <div className="gap-2 sm:gap-4 flex justify-center">
       {Array.from({ length: lenght }).map((_, index) => (
         <input
           key={index}
@@ -60,7 +60,7 @@ export default function OtpInput({ lenght, value, onChange }: OtpInputProps) {
           onPaste={handlePaste}
           onKeyDown={(e) => handleKeyDown(e, index)}
           maxLength={1}
-          className="w-12 h-12 text-center text-lg border border-white/30 bg-black text-white focus:border-primary outline-none"
+          className="w-10 sm:w-12 h-10 sm:h-12 text-center text-lg border border-white/30 bg-black text-white focus:border-primary outline-none"
         />
       ))}
     </div>

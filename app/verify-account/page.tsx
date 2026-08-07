@@ -30,7 +30,7 @@ export default async function VerifyAccountPage({ searchParams }: Props) {
           "lg:gap-16 lg:px-20 2xl:px-72",
         )}
       >
-        <div className="flex flex-col font-dm-sans rounded-2xl bg-bg-component border border-white/10 px-12 py-24">
+        <div className="flex flex-col font-dm-sans rounded-2xl bg-bg-component border border-white/10 px-6 sm:px-12 py-12 sm:py-24">
           <div className="flex justify-center">
             <Logo className="mb-16 w-28! sm:w-36!" />
           </div>
@@ -39,7 +39,7 @@ export default async function VerifyAccountPage({ searchParams }: Props) {
               <h1 className="flex justify-center font-bold text-lg sm:text-xl">
                 Verificação de Conta
               </h1>
-              <p className="text-sm mt-6">
+              <p className="text-xs sm:text-sm mt-6">
                 Um código de verificação foi enviado para{" "}
                 <strong>{email}</strong>.<br></br>
                 Acesse seu e-mail e insira o código abaixo para concluir a

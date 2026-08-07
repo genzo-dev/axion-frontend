@@ -3,11 +3,9 @@
 import { useActionState, useState } from "react";
 import { resendValidationCodeAction } from "@/actions/auth/resend-validation-code-action";
 import ResendValidationCodeForm from "@/components/Forms/auth/resend-validation-code-form";
-import { DefaultButton } from "@/components/Buttons/DefaultButton";
 import { FormError } from "@/components/Forms/FormError";
 import ValidateAccountForm from "@/components/Forms/auth/validate-account-form";
 import { validateAccountAction } from "@/actions/auth/validate-account-action";
-import { ValidateAccountSchema } from "@/schemas/auth/validate-account.schema";
 import OtpInput from "@/components/Inputs/OtpInput";
 
 type VerifyAccountSectionProps = {
@@ -47,7 +45,7 @@ export default function VerifyAccountSection({
 
       <div>
         <FormError message={errors[0]} className="mb-4" />
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <ResendValidationCodeForm
             email={email}
             action={resendAction}
