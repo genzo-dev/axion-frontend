@@ -1,5 +1,6 @@
 "use server";
 
+import { setTokens } from "@/lib/auth/manage-auth-cookies";
 import { ResendValidationCodeDto } from "@/schemas/auth/resend-validation-code.schema";
 import {
   ValidateAccountDto,
@@ -8,6 +9,7 @@ import {
 import { apiRequest } from "@/utils/api-request";
 import { asyncDelay } from "@/utils/async-delay";
 import { getZodErrorMessages } from "@/utils/get-zod-error-messages";
+import { redirect } from "next/navigation";
 
 type ValidateAccountActionState = {
   validateAccount: ValidateAccountDto;
@@ -40,30 +42,30 @@ export async function validateAccountAction(
     };
   }
 
-  const createUserResponse = await apiRequest<ResendValidationCodeDto>(
-    "/auth/verify",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(parsedFormData.data),
+  const validateAccountResponse = await apiRequest<{
+    accessToken: string;
+    refreshToken: string;
+  }>("/auth/verify", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
     },
-  );
+    body: JSON.stringify(parsedFormData.data),
+  });
 
-  if (!createUserResponse.success) {
+  if (!validateAccountResponse.success) {
     return {
       validateAccount: ValidateAccountSchema.parse(parsedFormData.data),
-      errors: createUserResponse.errors,
-      success: createUserResponse.success,
+      errors: validateAccountResponse.errors,
+      success: validateAccountResponse.success,
     };
   }
 
-  // TODO: Adicionar lógica para notificação de sucesso ou falha no envio do código
+  await setTokens(
+    validateAccountResponse.data.accessToken,
+    validateAccountResponse.data.refreshToken,
+  );
 
-  return {
-    validateAccount: ValidateAccountSchema.parse(parsedFormData.data),
-    errors: [],
-    success: true,
-  };
+  // TODO: Alterar redirect para /discover
+  redirect("/verify-account");
 }
