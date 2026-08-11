@@ -1,18 +1,17 @@
-# Testes
+Texto 1 — Testes unitários do frontend (Vitest)
 
-> Estratégia de testes do projeto, como rodar e convenções.
+# Testes Unitários (Frontend)
+
+> Estratégia, como rodar e convenções dos testes unitários com Vitest.
 
 ---
 
-## Estratégia de Testes
+## Estratégia de Testes Unitários
 
-| Nível           | Ferramenta | Foco                                                      |
-| --------------- | ---------- | --------------------------------------------------------- |
-| Unitário        | Vitest     | Lógica pura: schemas Zod, utils, componentes React        |
-| E2E (planejado) | Cypress    | Fluxos completos: server actions, redirect, cookies reais |
-
-- **Unitários (Vitest):** testam funções e componentes de forma isolada, mockando dependências externas (`next/headers`, `fetch`, `next/navigation`). Server actions **não** são testadas aqui — ficam para o E2E.
-- **E2E (Cypress):** fluxos reais de autenticação, validação de formulários, redirect e persistência de cookies.
+- **Ferramenta:** Vitest.
+- **Foco:** lógica pura — schemas Zod, utils e componentes React.
+- Testam funções e componentes de forma isolada, mockando dependências externas (`next/headers`, `fetch`, `next/navigation`).
+- Server actions **não** são testadas aqui — ficam para os testes E2E (ver documentação de Testes E2E).
 
 ---
 
@@ -27,7 +26,7 @@
 
 ---
 
-## Configuração (Vitest)
+## Configuração
 
 | Arquivo                  | Função                                                    |
 | ------------------------ | --------------------------------------------------------- |
@@ -77,4 +76,4 @@ Contém `setup()` e `teardown()` — hoje vazios, reservados para limpeza global
   }));
   ```
 
-- Lembre-se de que `vi.resetAllMocks()` zera a implementação dos mocks após cada teste — redefina mocks com vários it no mesmo arquivo.
+- Lembre-se de que vi.resetAllMocks() zera a implementação dos mocks após cada teste — redefina mocks com vários it no mesmo arquivo.

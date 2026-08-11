@@ -29,12 +29,7 @@ export async function createUserAction(
     };
   }
 
-  if (
-    process.env.NODE_ENV !== "test" &&
-    process.env.DISABLE_ASYNC_DELAYS !== "1"
-  ) {
-    await asyncDelay(2000);
-  }
+  await asyncDelay(2000);
 
   const formObj = Object.fromEntries(formData.entries());
   const parsedFormData = CreateUserSchema.safeParse(formObj);
