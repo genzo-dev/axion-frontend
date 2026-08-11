@@ -6,7 +6,7 @@ export function TextLoopCustom() {
       {" "}
       Organize o conhecimento disperso da internet em{" "}
       <TextLoop
-        className="inline-flex leading-none"
+        className="inline-flex leading-none text-orange-600 bg-[#0f0f0f] px-2"
         transition={{
           type: "spring",
           stiffness: 900,

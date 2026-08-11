@@ -16,7 +16,7 @@ export default function NavbarLink({
     <Link
       href={url}
       className={clsx(
-        "font-dm-sans bg-transparent hover:bg-primary w-full lg:w-auto px-3 sm:px-8 lg:px-3 py-2 font-bold text-sm sm:text-base lg:text-sm xl:text-base text-white hover:text-black transition",
+        "font-dm-sans bg-transparent hover:bg-[#1a1a1a] w-full lg:w-auto px-3 sm:px-8 lg:px-3 py-2 font-medium text-sm sm:text-base lg:text-sm xl:text-base text-white  transition",
       )}
       onClick={onClick}
     >

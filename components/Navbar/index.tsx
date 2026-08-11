@@ -29,24 +29,23 @@ export default function Navbar() {
   return (
     <nav
       className={clsx(
-        "font-raleway fixed top-0 left-0 lg:right-10 lg:left-10 2xl:right-40 2xl:left-40 lg:top-4 lg:rounded-lg z-50 flex w-full lg:w-auto justify-between items-center",
+        "font-raleway fixed top-0 left-0 z-50 flex w-full justify-between items-center",
         "py-4 sm:py-6 px-6 sm:px-12 lg:px-6 xl:px-12 2xl:px-14 lg:py-4",
-        "text-white border border-white/5 lg:bg-bg-trasnparent lg:hover:bg-bg-component",
+        "text-white border-b border-b-[#1a1a1a] lg:bg-black",
         "transition-colors duration-300 z-9997",
-        isMenuOpen ? "bg-black z-9997" : "bg-bg-component",
+        isMenuOpen ? "bg-black z-9997" : "bg-black",
       )}
     >
       <div className={containerStyle}>
         <Logo />
       </div>
-
       <div className={containerStyle}>
         <div className="lg:hidden">
           <MenuButton isOpen={isMenuOpen} onClick={toggleMenu} />
 
           <div
             className={clsx(
-              "fixed top-[65px] sm:top-[80px] left-0 right-0 bottom-0 bg-black border-t border-white/10 p-4 flex flex-col justify-between",
+              "fixed top-[65px] sm:top-[80px] left-0 right-0 bottom-0 bg-black  p-4 flex flex-col justify-between",
               "transition-all duration-300 ease-in-out",
               isMenuOpen
                 ? "opacity-100 translate-y-0 pointer-events-auto"
@@ -83,7 +82,9 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+      </div>
 
+      <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2">
         <ul
           className={clsx(
             "items-center justify-center gap-2 hidden lg:flex",
@@ -95,22 +96,22 @@ export default function Navbar() {
               {label}
             </NavbarLink>
           ))}
-
-          <div className="flex items-center gap-4">
-            <Link
-              href="/register"
-              className="font-dm-sans border border-white/10 bg-transparent hover:bg-primary px-3 py-2 font-bold text-sm xl:text-base text-white hover:text-black transition"
-            >
-              Cadastrar-se
-            </Link>
-            <Link
-              href="/login"
-              className="font-dm-sans border border-transparent bg-primary hover:brightness-75 px-3 py-2 font-bold text-sm xl:text-base text-black transition"
-            >
-              Entrar
-            </Link>
-          </div>
         </ul>
+      </div>
+
+      <div className="hidden lg:flex items-center gap-4">
+        <Link
+          href="/register"
+          className="font-dm-sans border border-white/10 hover:border-white/20 bg-transparent brightness-90 hover:brightness-125 px-3 py-2 font-bold text-sm xl:text-base text-white  transition"
+        >
+          Cadastrar-se
+        </Link>
+        <Link
+          href="/login"
+          className="font-dm-sans border border-transparent bg-primary hover:brightness-75 px-3 py-2 font-bold text-sm xl:text-base text-black transition"
+        >
+          Entrar
+        </Link>
       </div>
     </nav>
   );
