@@ -77,4 +77,4 @@ Contém `setup()` e `teardown()` — hoje vazios, reservados para limpeza global
   }));
   ```
 
-- Lembre-se de que vi.resetAllMocks() zera a implementação dos mocks após cada teste — redefina mocks com vários it no mesmo arquivo.
+- Lembre-se de que `vi.resetAllMocks()` zera a implementação dos mocks após cada teste — redefina mocks com vários it no mesmo arquivo.
