@@ -28,7 +28,7 @@ const CreateUserBase = z.object({
 export const CreateUserSchema = CreateUserBase.refine(
   (data) => data.password === data.confirmPassword,
   {
-    message: "As senhas não coinciddem",
+    message: "As senhas não coincidem",
     path: ["confirmPassword"],
   },
 ).transform(({ email, username, password, name }) => {
