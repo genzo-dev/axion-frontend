@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "../Logo";
 import MenuButton from "../Buttons/MenuButton";
@@ -9,6 +9,7 @@ import NavbarLink from "./_components/NavbarLink";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showNavBg, setShowNavBg] = useState(false);
   const containerStyle = clsx("rounded-full py-2 lg:py-0");
   const navLinkMap = [
     { label: "Início", url: "/#hero" },
@@ -17,6 +18,12 @@ export default function Navbar() {
     { label: "Público", url: "/#audience" },
     { label: "Roadmap", url: "/#roadmap" },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => setShowNavBg(window.scrollY > 0);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   function toggleMenu() {
     setIsMenuOpen((prev) => !prev);
@@ -30,8 +37,11 @@ export default function Navbar() {
     <nav
       className={clsx(
         "font-raleway fixed top-0 left-0 z-50 flex w-full justify-between items-center",
-        "py-4 sm:py-6 px-6 sm:px-12 lg:px-6 xl:px-12 2xl:px-14 lg:py-4",
-        "text-white border-b border-b-[#1a1a1a] lg:bg-black",
+        "py-4 sm:py-6 px-6 sm:px-12 lg:px-6 xl:px-12 2xl:px-40 lg:py-4",
+        "text-white border-b",
+        showNavBg
+          ? "lg:bg-black border-b-bg-component"
+          : "lg:bg-transparent border-b-transparent",
         "transition-colors duration-300 z-9997",
         isMenuOpen ? "bg-black z-9997" : "bg-black",
       )}

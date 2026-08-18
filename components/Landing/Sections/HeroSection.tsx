@@ -20,7 +20,7 @@ export default function HeroSection() {
         className={clsx(
           "absolute inset-0 flex flex-col items-center justify-center text-center gap-8 px-6",
           "text-neutral-100",
-          "lg:gap-16 lg:px-20 2xl:px-72",
+          "lg:gap-16 2xl:gap-2o lg:px-20 2xl:px-72",
         )}
       >
         <TextLoopCustom />
