@@ -6,7 +6,7 @@ export function TextLoopCustom() {
       {" "}
       Organize o conhecimento disperso da internet em{" "}
       <TextLoop
-        className="inline-flex leading-none"
+        className="inline-flex leading-none bg-bg-component text-primary px-4"
         transition={{
           type: "spring",
           stiffness: 900,
@@ -35,7 +35,7 @@ export function TextLoopCustom() {
         }}
       >
         <span>trilhas de estudo</span>
-        <span>jornadas de aprendizado</span>
+        {/* <span>jornadas de aprendizado</span> */}
         <span>rotas organizadas</span>
         <span>guias colaborativos</span>
       </TextLoop>

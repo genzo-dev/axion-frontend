@@ -18,15 +18,31 @@ export default function HeroSection() {
       <div
         id="hero"
         className={clsx(
-          "absolute inset-0 flex flex-col items-center justify-center text-center gap-8 px-6",
+          "absolute inset-0 flex flex-col items-center justify-center text-center gap-4 px-6 -translate-y-10",
           "text-neutral-100",
-          "lg:gap-16 lg:px-20 2xl:px-72",
+          "lg:gap-8 lg:px-20 2xl:px-72",
         )}
       >
-        <TextLoopCustom />
-        <DefaultButton href="/discover" size="lg" className="px-12!">
-          Explorar Trilhas
-        </DefaultButton>
+        <div>
+          <TextLoopCustom />
+        </div>
+        <p className="text-xs sm:text-base md:text-base xl:text-xl font-bold px-4">
+          Aprenda com a comunidade, organize o que você descobre e compartilhe
+          suas <span className="bg-bg-component px-2">próprias trilhas.</span>
+        </p>
+        <div className="flex flex-col sm:flex-row mt-4 sm:mt-0 gap-4 self-center items-center justify-center mx-auto">
+          <DefaultButton
+            href="/discover"
+            variant="ghost"
+            size="lg"
+            className="px-12! font-bold"
+          >
+            Criar uma trilha
+          </DefaultButton>
+          <DefaultButton href="/discover" size="lg" className="px-12!">
+            Explorar Trilhas
+          </DefaultButton>
+        </div>
       </div>
     </section>
   );

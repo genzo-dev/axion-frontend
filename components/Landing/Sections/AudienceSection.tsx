@@ -40,10 +40,10 @@ export default function AudienceSection() {
             </div>
             <p className="font-dm-sans">
               Você aprendeu cedo que não precisa de permissão para estudar. Mas
-              aprender sozinho não significa aprender desorganizado. O Axion é o
-              mapa que transforma a sopa de abas e links soltos em uma jornada
-              clara — construída por quem também estuda de verdade. Menos tempo
-              filtrando, mais tempo aprendendo.
+              aprender sozinho não significa aprender de forma desorganizada. O
+              Axion é o mapa que transforma a sopa de abas e links soltos em uma
+              jornada clara — construída por quem também estuda de verdade.
+              Menos tempo filtrando, mais tempo aprendendo.
             </p>
           </div>
         </div>
@@ -65,10 +65,10 @@ export default function AudienceSection() {
             <p className="font-dm-sans">
               Você sabe que parar de aprender não é opção. Mas entre entregas e
               prazos, sobra pouco tempo para garimpar o que realmente vale a
-              pena. O Axion entrega curadoria feita por quem domina o assunto —
-              para você estudar no seu ritmo, sem perder tempo com conteúdo
-              irrelevante. O próximo degrau da sua carreira está na próxima
-              trilha certa.
+              pena. No Axion, você encontra trilhas organizadas por outros
+              autodidatas e profissionais, reunindo os conteúdos que eles
+              consideraram úteis em seus próprios caminhos de aprendizado.
+              Estude no seu ritmo, sem precisar começar sua pesquisa do zero.
             </p>
           </div>
           <div className=" w-0.5 bg-primary hidden lg:block lg:order-2"></div>

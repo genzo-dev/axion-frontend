@@ -9,7 +9,7 @@ export default function Logo() {
         alt="Logo do Axion"
         width={434}
         height={89}
-        className="w-20 xl:w-24 2xl:w-32 hover:cursor-pointer transition"
+        className="w-20 xl:w-24 2xl:w-28 hover:cursor-pointer transition"
       />
     </Link>
   );
