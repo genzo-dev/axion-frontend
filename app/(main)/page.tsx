@@ -4,6 +4,10 @@ import FunctionSection from "@/components/Landing/Sections/FunctionSection";
 import HeroSection from "@/components/Landing/Sections/HeroSection";
 import PhasesSection from "@/components/Landing/Sections/PhasesSection";
 import ProblemSection from "@/components/Landing/Sections/ProblemSection";
+import {
+  ScrollVelocityContainer,
+  ScrollVelocityRow,
+} from "@/components/ui/scroll-based-velocity";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

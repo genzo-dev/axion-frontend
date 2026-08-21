@@ -3,7 +3,7 @@ import FooterLink from "@/components/Links/FooterLink";
 
 export default function AboutPage() {
   return (
-    <div className="pt-35 px-6 sm:px-12 lg:px-10 2xl:px-40">
+    <div className="py-35 px-6 sm:px-12 lg:px-10 2xl:px-40">
       <h1 className="text-4xl/relaxed font-bold">Sobre o Axion</h1>
       <span className="text-sm">Última atualização: 26/07/2026</span>
       <div className="h-px w-full bg-primary my-8"></div>

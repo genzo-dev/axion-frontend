@@ -34,8 +34,9 @@ export default function FunctionSection() {
         <Card title="3. Estude no seu ritmo" url="#roadmap">
           {" "}
           <p className="mb-4 text-sm">
-            Siga trilhas curadas pela comunidade, marque seu progresso e evolua
-            com conteúdo organizado por quem entende do assunto.
+            Siga trilhas criadas pela comunidade, acompanhe seu progresso e
+            descubra conteúdos organizados por quem já passou por esses
+            caminhos.
           </p>
           <p className="text-sm">
             <strong className="text-primary">Futuro:</strong> grupos de estudo

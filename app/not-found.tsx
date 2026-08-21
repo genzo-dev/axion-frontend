@@ -25,6 +25,11 @@ export default function NotFoundPage() {
         <p className="font-dm-sans text-lg sm:text-2xl md:text-3xl lg:text-4xl/tight xl:text-5xl/tight font-bold">
           Sabemos que essa página deveria existir. A teoria prevê ela aqui...
         </p>
+        <p className="font-dm-sans bg-bg-component px-2">
+          <label className="text-primary font-bold">Atenção: </label>O Axion é
+          um projeto em construção, algumas páginas podem não estar disponíveis
+          ainda.
+        </p>
         <Link
           href="/"
           className="font-dm-sans bg-primary hover:brightness-75 px-4 lg:px-6 py-2 lg:py-3 font-bold text-black sm:text-lg transition"
