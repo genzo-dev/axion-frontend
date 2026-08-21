@@ -25,10 +25,11 @@ export default function ProblemSection() {
         </h3>
 
         <p className="font-dm-sans text-black text-lg mt-4">
-          Udemy, Coursera, Alura — todas têm algo em comum: apenas instrutores
-          aprovados podem criar cursos. Um engenheiro sênior que domina um
-          tópico nichado não pode compartilhar seu conhecimento sem passar por
-          um processo burocrático.
+          Plataformas como Udemy, Coursera e Alura centralizam a criação e
+          publicação de cursos em instrutores e produtores selecionados. Um
+          profissional com conhecimento valioso sobre um tópico específico pode
+          ter muito a contribuir, mas esse conhecimento nem sempre encontra
+          espaço nessas plataforma.
         </p>
       </div>
 
