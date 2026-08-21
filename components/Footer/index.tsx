@@ -3,7 +3,7 @@ import FooterLink from "../Links/FooterLink";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col md:flex-row md:justify-between px-6 sm:px-12 lg:px-10 2xl:px-120 py-24 bg-black font-dm-sans">
+    <footer className="w-full flex flex-col md:flex-row md:justify-between px-6 sm:px-12 lg:px-10 2xl:px-120 py-24 bg-bg-component font-dm-sans">
       <div className="flex flex-col text-xs sm:text-sm mb-12 md:mb-0">
         <Logo />
         <span className="my-4">
