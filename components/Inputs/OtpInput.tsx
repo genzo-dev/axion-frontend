@@ -54,6 +54,7 @@ export default function OtpInput({ lenght, value, onChange }: OtpInputProps) {
           ref={(el) => {
             inputRef.current[index] = el;
           }}
+          data-cy={`otp-input-${index}`}
           type="text"
           value={value[index] || ""}
           onChange={(e) => handleChange(e.target.value, index)}

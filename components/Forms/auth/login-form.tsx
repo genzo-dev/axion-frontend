@@ -23,6 +23,7 @@ export default function LoginForm() {
     <form
       action={action}
       className="flex flex-col justify-center gap-4 w-full h-full bg-black border-r border-r-white/10 py-24 px-6 sm:px-12 lg:px-6 2xl:px-12 font-dm-sans"
+      data-cy="login-form"
     >
       <div className="flex flex-col gap-4 bg-white/5 border border-white/10 px-12 py-12 rounded-lg">
         <div className="text-start pb-4 font-dm-sans">
@@ -58,7 +59,7 @@ export default function LoginForm() {
           className="relative w-full border border-transparent"
           type="submit"
         >
-          <span className={isPending ? "invisible" : "visible"}>Cadastrar</span>
+          <span className={isPending ? "invisible" : "visible"}>Entrar</span>
 
           {isPending && <SpinLoader />}
         </DefaultButton>

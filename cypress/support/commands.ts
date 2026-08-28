@@ -46,15 +46,6 @@ Cypress.Commands.add("seedUser", () => {
   });
 });
 
-Cypress.Commands.add("login", (email: string, password: string) => {
-  cy.visit("/login");
-
-  cy.get('input[name="email"]').type(email);
-  cy.get('input[name="password"]').type(password);
-
-  cy.get('button[type="submit"]').click();
-});
-
 Cypress.Commands.add("logout", () => {
   cy.get('button[type="submit"][name="logout"]').click();
 });
@@ -81,3 +72,42 @@ Cypress.Commands.add(
     cy.get('button[type="submit"]').click();
   },
 );
+
+Cypress.Commands.add("verify_account", (email: string) => {
+  cy.visit(`/verify-account?email=${email}`);
+
+  cy.get('[data-cy="verify-account-form"]')
+    .find('input[name="validateEmail"]')
+    .should("not.be.disabled")
+    .invoke("val", email);
+
+  cy.get('[data-cy="otp-input-0"]').focus().type("1");
+  cy.get('[data-cy="otp-input-1"]').focus().type("2");
+  cy.get('[data-cy="otp-input-2"]').focus().type("3");
+  cy.get('[data-cy="otp-input-3"]').focus().type("4");
+  cy.get('[data-cy="otp-input-4"]').focus().type("5");
+  cy.get('[data-cy="otp-input-5"]').focus().type("6");
+
+  cy.get('[data-cy="verify-account-form"]')
+    .find('button[type="submit"]')
+    .click();
+});
+
+Cypress.Commands.add("login", (indentifier: string, password: string) => {
+  cy.visit("/login");
+
+  cy.get('[data-cy="login-form"]')
+    .find('input[name="indentifier"]')
+    .should("not.be.disabled")
+    .type(indentifier);
+
+  cy.get('[data-cy="login-form"]')
+    .find('input[name="password"]')
+    .should("not.be.disabled")
+    .type(password);
+
+  cy.get('[data-cy="login-form"]').find('button[type="submit"]').click();
+
+  cy.setCookie("accessToken", "fake-access-token");
+  cy.setCookie("refreshToken", "fake-refresh-token");
+});

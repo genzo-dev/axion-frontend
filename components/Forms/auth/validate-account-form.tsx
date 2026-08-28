@@ -19,7 +19,11 @@ export default function ValidateAccountForm({
   isPending,
 }: ValidateAccountFormProps) {
   return (
-    <form action={action} className="w-full font-dm-sans">
+    <form
+      action={action}
+      className="w-full font-dm-sans"
+      data-cy="verify-account-form"
+    >
       <input type="hidden" name="validateEmail" readOnly value={email} />
       <input type="hidden" name="validateCode" readOnly value={code} />
 

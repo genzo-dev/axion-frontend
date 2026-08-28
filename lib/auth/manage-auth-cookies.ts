@@ -6,18 +6,21 @@ import { cookies } from "next/headers";
 
 export async function setTokens(accessToken: string, refreshToken: string) {
   const cookieStore = await cookies();
+  const isNonTest =
+    process.env.NODE_ENV === "development" ||
+    process.env.NODE_ENV === "production";
 
   cookieStore.set("accessToken", accessToken, {
-    httpOnly: true,
-    secure: true,
+    httpOnly: isNonTest,
+    secure: isNonTest,
     sameSite: "lax",
     expires: new Date(Date.now() + accessTokenExpires), // 15 minutes
     path: "/",
   });
 
   cookieStore.set("refreshToken", refreshToken, {
-    httpOnly: true,
-    secure: true,
+    httpOnly: isNonTest,
+    secure: isNonTest,
     sameSite: "lax",
     expires: new Date(Date.now() + refreshTokenExpires), // 7 days
     path: "/",

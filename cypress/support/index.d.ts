@@ -1,7 +1,7 @@
 declare namespace Cypress {
   interface Chainable {
     seedUser(): Chainable<void>;
-    login(email: string, password: string): Chainable<void>;
+    login(indentifier: string, password: string): Chainable<void>;
     logout(): Chainable<void>;
     register(
       username: string,
@@ -10,5 +10,6 @@ declare namespace Cypress {
       password: string,
       confirmPassword: string,
     ): Chainable<void>;
+    verify_account(email: string): Chainable<void>;
   }
 }

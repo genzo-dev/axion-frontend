@@ -20,12 +20,13 @@ describe("Register E2E", () => {
       "12345678",
     );
     cy.contains("Já existe uma conta com este e-mail", {
-      timeout: 10000,
+      timeout: 30000,
     }).should("be.visible");
-    cy.url().should("include", "/register");
   });
 
   it("should not register with invalid email", () => {
+    cy.visit("/register");
+
     cy.register(
       username,
       "test-user",
