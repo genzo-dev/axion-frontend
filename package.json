@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "e2e:test": "NODE_ENV=test next dev",
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",

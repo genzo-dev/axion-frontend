@@ -74,23 +74,34 @@ Cypress.Commands.add(
 );
 
 Cypress.Commands.add("verify_account", (email: string) => {
-  cy.visit(`/verify-account?email=${email}`);
+  cy.visit(`/verify-account?email=${encodeURIComponent(email)}`);
 
-  cy.get('[data-cy="verify-account-form"]')
-    .find('input[name="validateEmail"]')
-    .should("not.be.disabled")
-    .invoke("val", email);
+  cy.screenshot("before-verify-form");
+  cy.url().then((url) => {
+    console.log("Current URL: ", url);
+  });
+
+  cy.get('[data-cy="verify-account-form"] input[name="validateEmail"]').should(
+    "exist",
+  );
 
   cy.get('[data-cy="otp-input-0"]').focus().type("1");
-  cy.get('[data-cy="otp-input-1"]').focus().type("2");
-  cy.get('[data-cy="otp-input-2"]').focus().type("3");
-  cy.get('[data-cy="otp-input-3"]').focus().type("4");
-  cy.get('[data-cy="otp-input-4"]').focus().type("5");
-  cy.get('[data-cy="otp-input-5"]').focus().type("6");
+  cy.wait(100);
+  cy.focused().type("2");
+  cy.wait(100);
+  cy.focused().type("3");
+  cy.wait(100);
+  cy.focused().type("4");
+  cy.wait(100);
+  cy.focused().type("5");
+  cy.wait(100);
+  cy.focused().type("6");
 
   cy.get('[data-cy="verify-account-form"]')
     .find('button[type="submit"]')
     .click();
+
+  cy.wait(1000);
 });
 
 Cypress.Commands.add("login", (indentifier: string, password: string) => {
@@ -108,6 +119,5 @@ Cypress.Commands.add("login", (indentifier: string, password: string) => {
 
   cy.get('[data-cy="login-form"]').find('button[type="submit"]').click();
 
-  cy.setCookie("accessToken", "fake-access-token");
-  cy.setCookie("refreshToken", "fake-refresh-token");
+  cy.wait(3000);
 });
