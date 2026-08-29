@@ -13,7 +13,7 @@ export default function Logo({ className }: LogoProps) {
         alt="Logo do Axion"
         width={434}
         height={89}
-        className={`w-20 xl:w-24 hover:cursor-pointer transition ${className || ""}`}
+        className="w-20 xl:w-24 2xl:w-28 hover:cursor-pointer transition"
       />
     </Link>
   );

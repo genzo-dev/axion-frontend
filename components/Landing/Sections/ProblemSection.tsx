@@ -2,7 +2,7 @@ export default function ProblemSection() {
   return (
     <section
       id="purpose"
-      className=" scroll-mt-30 flex flex-col gap-2 lg:gap-4 bg-[#FAF9F6] rounded-lg -translate-y-36 -mb-36 mx-6 sm:mx-12 lg:mx-6 2xl:mx-40 px-4 pt-2 pb-6"
+      className=" scroll-mt-30 flex flex-col gap-2 lg:gap-4 bg-[#FAF9F6] rounded-lg -translate-y-40 -mb-40 mx-6 sm:mx-12 lg:mx-6 2xl:mx-40 px-4 pt-2 pb-6"
     >
       <div>
         <h2 className="border-b-2 border-black text-black text-2xl/relaxed md:text-3xl/relaxed lg:text-4xl/relaxed font-dm-sans font-bold">
@@ -25,10 +25,11 @@ export default function ProblemSection() {
         </h3>
 
         <p className="font-dm-sans text-black text-lg mt-4">
-          Udemy, Coursera, Alura — todas têm algo em comum: apenas instrutores
-          aprovados podem criar cursos. Um engenheiro sênior que domina um
-          tópico nichado não pode compartilhar seu conhecimento sem passar por
-          um processo burocrático.
+          Plataformas como Udemy, Coursera e Alura centralizam a criação e
+          publicação de cursos em instrutores e produtores selecionados. Um
+          profissional com conhecimento valioso sobre um tópico específico pode
+          ter muito a contribuir, mas esse conhecimento nem sempre encontra
+          espaço nessas plataforma.
         </p>
       </div>
 

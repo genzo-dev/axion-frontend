@@ -112,13 +112,13 @@ export default function Navbar() {
       <div className="hidden lg:flex items-center gap-4">
         <Link
           href="/register"
-          className="font-dm-sans border border-white/10 hover:border-white/20 bg-transparent brightness-90 hover:brightness-125 px-3 py-2 font-bold text-sm xl:text-base text-white  transition"
+          className="font-dm-sans border border-white/10 hover:border-white/20 bg-transparent brightness-90 hover:brightness-125 px-3 py-1.5 text-sm font-medium xl:text-base text-white  transition"
         >
           Cadastrar-se
         </Link>
         <Link
           href="/login"
-          className="font-dm-sans border border-transparent bg-primary hover:brightness-75 px-3 py-2 font-bold text-sm xl:text-base text-black transition"
+          className="font-dm-sans border border-transparent bg-primary hover:brightness-75 px-3 py-1.5 text-sm font-medium xl:text-base text-black transition"
         >
           Entrar
         </Link>
