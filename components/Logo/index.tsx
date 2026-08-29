@@ -1,7 +1,12 @@
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Logo() {
+type LogoProps = {
+  className?: string;
+};
+
+export default function Logo({ className }: LogoProps) {
   return (
     <Link href="/">
       <Image
@@ -9,7 +14,10 @@ export default function Logo() {
         alt="Logo do Axion"
         width={434}
         height={89}
-        className="w-20 xl:w-24 2xl:w-28 hover:cursor-pointer transition"
+        className={clsx(
+          "w-20 xl:w-24 2xl:w-28 hover:cursor-pointer transition",
+          className,
+        )}
       />
     </Link>
   );
