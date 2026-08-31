@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 
-type ButtonVariants = "default" | "ghost" | "contrast" | "active";
+type ButtonVariants = "default" | "ghost" | "contrast" | "active" | "danger";
 type ButtonSizes = "sm" | "md" | "lg";
 
 type BaseProps = {
@@ -44,6 +44,7 @@ export function DefaultButton({
       "bg-transparent text-white",
       "hover:bg-primary hover:text-black border border-white/10",
     ),
+    danger: clsx("bg-red-600 text-black hover:bg-red-700 border"),
   };
 
   const buttonSizes: Record<ButtonSizes, string> = {

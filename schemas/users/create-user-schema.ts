@@ -4,6 +4,8 @@ export const PublicUserSchema = z.object({
   email: z.email("Informe um e-mail válido").default(""),
   username: z.string().default(""),
   name: z.string().default(""),
+  description: z.string().default(""),
+  createdAt: z.string(),
 });
 
 const CreateUserBase = z.object({
