@@ -1,8 +1,8 @@
-import { PublicUserDto } from "@/schemas/users/create-user-schema";
+import { UserResponseDto } from "@/schemas/users/user-response-schema";
 import { apiAuthenticatedRequest } from "@/utils/api-authenticated-request";
 
 export async function getCurrentUser() {
-  const res = await apiAuthenticatedRequest<PublicUserDto>("/users/me", {
+  const res = await apiAuthenticatedRequest<UserResponseDto>("/users/me", {
     method: "GET",
     cache: "no-store",
   });

@@ -7,9 +7,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex-1 min-h-full flex flex-col font-dm-sans">
-      <main>
-        <Navbar />
+    <div className="flex-1 flex flex-col font-dm-sans">
+      <Navbar />
+      <main className="flex-1">
         {children}
         <ScrollToTopButton />
       </main>

@@ -1,7 +1,7 @@
 "use client";
 
 type NavbarBaseProps = {
-  user: PublicUserDto | null;
+  user: UserResponseDto | null;
 };
 
 import clsx from "clsx";
@@ -10,9 +10,10 @@ import NavbarLink from "./NavbarLink";
 import MenuButton from "@/components/Buttons/MenuButton";
 import Logo from "@/components/Logo";
 import NavbarUnloggedLinks from "./NavbarUnloggedLinks";
-import { PublicUserDto } from "@/schemas/users/create-user-schema";
 import { DefaultButton } from "@/components/Buttons/DefaultButton";
 import { FiUser } from "react-icons/fi";
+import { UserResponseDto } from "@/schemas/users/user-response-schema";
+import ProfileNavButton from "@/components/Buttons/ProfileNavButton";
 
 export default function NavbarBase({ user }: NavbarBaseProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +45,8 @@ export default function NavbarBase({ user }: NavbarBaseProps) {
     <nav
       className={clsx(
         "font-raleway fixed top-0 left-0 z-50 flex w-full justify-between items-center",
-        "py-4 sm:py-6 px-6 sm:px-12 lg:px-6 xl:px-12 2xl:px-40 lg:py-4",
+        user ? "py-2" : "py-4",
+        "sm:py-6 px-6 sm:px-12 lg:px-6 xl:px-12 2xl:px-40 lg:py-4",
         "text-white border-b",
         showNavBg
           ? "lg:bg-black border-b-bg-component"
@@ -61,19 +63,15 @@ export default function NavbarBase({ user }: NavbarBaseProps) {
           <MenuButton isOpen={isMenuOpen} onClick={toggleMenu} />
           {/* TODO: Ajustar design do ícone */}
           {user ? (
-            <DefaultButton
-              variant="active"
-              size="sm"
-              className="w-10 h-10 rounded-full"
-            >
-              <FiUser />
-            </DefaultButton>
+            <div className="flex items-center justify-center">
+              <ProfileNavButton user={user} />
+            </div>
           ) : (
             ""
           )}
           <div
             className={clsx(
-              "fixed top-[65px] sm:top-[80px] left-0 right-0 bottom-0 bg-black  p-4 flex flex-col justify-between",
+              "fixed top-[65px] sm:top-[80px] left-0 right-0 bottom-0 bg-black p-4 flex flex-col justify-between",
               "transition-all duration-300 ease-in-out",
               isMenuOpen
                 ? "opacity-100 translate-y-0 pointer-events-auto"
@@ -123,13 +121,7 @@ export default function NavbarBase({ user }: NavbarBaseProps) {
       </div>
 
       <div className="hidden lg:flex items-center gap-4">
-        {user ? (
-          <DefaultButton variant="active" className=" w-12 h-12 rounded-full">
-            <FiUser />
-          </DefaultButton>
-        ) : (
-          <NavbarUnloggedLinks />
-        )}
+        {user ? <ProfileNavButton user={user} /> : <NavbarUnloggedLinks />}
       </div>
     </nav>
   );

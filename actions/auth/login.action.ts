@@ -68,5 +68,5 @@ export async function loginAction(
   );
 
   // TODO: Alterar redirect para /discover
-  redirect("/login");
+  redirect("/u/me");
 }
