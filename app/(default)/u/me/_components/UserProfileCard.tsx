@@ -11,7 +11,7 @@ export default function UserProfileCard({
   user: UserResponseDto | null;
 }) {
   return (
-    <section className="flex flex-col items-center sm:items-start justify-center">
+    <section className="flex flex-col items-center sm:items-start justify-center sm:bg-white/5 sm:border sm:border-white/10 sm:p-4 md:p-8 sm:rounded-lg">
       <div className="flex flex-col sm:flex-row sm:w-full">
         <Image
           src="/images/cloud-noiva.jpg"

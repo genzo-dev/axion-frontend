@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 type InfoButtonProps = {
-  onClick: () => void;
+  onClick?: () => void;
   isActive: boolean;
   label: string;
   className?: string;

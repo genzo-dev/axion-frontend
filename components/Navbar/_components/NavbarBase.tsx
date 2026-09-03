@@ -34,10 +34,10 @@ export default function NavbarBase({ user }: NavbarBaseProps) {
   ];
 
   const navAuthLinkMap = [
-    { label: "Meu Perfil", url: "/u/me", icon: <FiUser /> },
+    { label: "Meu Perfil", url: "/u/me?section=profile", icon: <FiUser /> },
     {
       label: "Minhas Trilhas",
-      url: "/u/me#trails",
+      url: "/u/me?section=trails",
       icon: <IoTrailSignOutline />,
     },
     {
