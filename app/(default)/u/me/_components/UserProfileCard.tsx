@@ -51,6 +51,7 @@ export default function UserProfileCard({
             </div>
 
             <div className="flex justify-center gap-2 items-center">
+              {/* TODO: Criar variante para danger */}
               <DefaultButton
                 variant="ghost"
                 size="sm"
