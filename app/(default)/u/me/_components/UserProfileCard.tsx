@@ -2,7 +2,7 @@ import { DefaultButton } from "@/components/Buttons/DefaultButton";
 import { UserResponseDto } from "@/schemas/users/user-response-schema";
 import Image from "next/image";
 import Link from "next/link";
-import { FiPlus } from "react-icons/fi";
+import { FiPlus, FiUser } from "react-icons/fi";
 import { TbUserEdit } from "react-icons/tb";
 
 export default function UserProfileCard({
@@ -13,13 +13,21 @@ export default function UserProfileCard({
   return (
     <section className="flex flex-col items-center sm:items-start justify-center sm:bg-white/5 sm:border sm:border-white/10 sm:p-4 md:p-8 sm:rounded-lg">
       <div className="flex flex-col sm:flex-row sm:w-full">
-        <Image
-          src="/images/cloud-noiva.jpg"
-          alt="test-user-image"
-          width={500}
-          height={500}
-          className="object-cover self-center rounded-full w-32 h-32"
-        />
+        <div className="w-32 h-32 shrink-0">
+          {user?.profileImageKey ? (
+            <Image
+              src={`/pictures/${user?.profileImageKey}`}
+              alt="test-user-image"
+              width={500}
+              height={500}
+              className="object-cover self-center rounded-full"
+            />
+          ) : (
+            <div className="w-full h-full border border-primary rounded-full flex items-center justify-center">
+              <FiUser className="text-[80px]" />
+            </div>
+          )}
+        </div>
         <div className="flex flex-col items-center sm:items-start sm:justify-between w-full sm:ml-4 justify-center gap-1 mt-4 sm:mt-0">
           <div className="w-full text-center sm:text-left">
             <div className="flex gap-1 items-center justify-center sm:justify-start">

@@ -6,6 +6,7 @@ export const UserResponseSchema = z.object({
   name: z.string().default(""),
   description: z.string().default(""),
   createdAt: z.string(),
+  profileImageKey: z.string().default(""),
 });
 
 export type UserResponseDto = z.infer<typeof UserResponseSchema>;

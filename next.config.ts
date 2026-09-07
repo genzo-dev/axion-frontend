@@ -3,6 +3,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   compress: true,
+  async rewrites() {
+    return [
+      {
+        source: "/pictures/:path*",
+        destination: "http://localhost:3001/pictures/:path*",
+      },
+    ];
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 768, 1024, 1280, 1536],
