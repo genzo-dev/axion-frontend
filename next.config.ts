@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/pictures/:path*",
-        destination: "http://localhost:3001/pictures/:path*",
+        destination: `${process.env.API_URL}/pictures/:path*`,
       },
     ];
   },
