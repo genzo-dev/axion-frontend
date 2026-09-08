@@ -16,7 +16,7 @@ export default function UserProfileCard({
         <div className="w-32 h-32 shrink-0">
           {user?.profileImageKey ? (
             <Image
-              src={`/pictures/${user?.profileImageKey}`}
+              src={`/pictures/${user.profileImageKey}?v=${user.updatedAt}`}
               alt="test-user-image"
               width={500}
               height={500}

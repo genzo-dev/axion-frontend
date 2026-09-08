@@ -22,7 +22,7 @@ export default function ProfileNavButton({
     >
       {user?.profileImageKey ? (
         <Image
-          src={`/pictures/${user?.profileImageKey}`}
+          src={`/pictures/${user.profileImageKey}?v=${user.updatedAt}`}
           alt="test-user-image"
           width={36}
           height={36}

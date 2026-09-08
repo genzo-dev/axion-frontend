@@ -6,6 +6,7 @@ export const UserResponseSchema = z.object({
   name: z.string().default(""),
   description: z.string().default(""),
   createdAt: z.string(),
+  updatedAt: z.string(),
   profileImageKey: z.string().default(""),
 });
 
