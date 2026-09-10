@@ -1,17 +1,11 @@
 "use server";
 
-import {
-  CreateUserDto,
-  CreateUserSchema,
-  PublicUserDto,
-  PublicUserSchema,
-} from "@/schemas/users/create-user-schema";
+import { PublicUserSchema } from "@/schemas/users/create-user-schema";
 import {
   UpdateUserDto,
   UpdateUserSchema,
 } from "@/schemas/users/update-user-schema";
 import { apiAuthenticatedRequest } from "@/utils/api-authenticated-request";
-import { apiRequest } from "@/utils/api-request";
 import { asyncDelay } from "@/utils/async-delay";
 import { getZodErrorMessages } from "@/utils/get-zod-error-messages";
 import { revalidatePath } from "next/cache";
