@@ -23,7 +23,7 @@ export default function FunctionSection() {
           {" "}
           <p className="mb-4 text-sm">
             Publique sua trilha para que a comunidade possa interagir, ajudando
-            outros autodidatas a encontrar o caminho certo.
+            outros estudantes a encontrar o caminho certo.
           </p>
           <p className="text-sm">
             <strong className="text-primary">Futuro:</strong> sistema de apoio

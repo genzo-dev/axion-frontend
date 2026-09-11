@@ -60,45 +60,55 @@ export default function PhasesSection() {
 
       <div className="flex flex-col w-full xl:max-w-1/2 2xl:max-w-1/3 gap-4">
         <Accordion title="Fase 0 - Estrutura básica do projeto">
-          <div className="flex flex-col gap-4 sm:gap-8">
+          <div className="flex flex-col">
             <p>
               Antes de construir qualquer funcionalidade, foi preciso preparar o
-              terreno. Esta fase estabeleceu toda a base técnica do projeto: a
-              configuração dos ambientes de desenvolvimento, a escolha das
-              tecnologias, a organização dos repositórios e a documentação
-              inicial. Tudo isso para garantir que o Axion fosse construído
-              sobre fundações sólidas — do backend ao frontend.
+              terreno. Esta fase estabeleceu a base técnica que será utilizada
+              no <strong>Axion</strong>: as tecnologias escolhidas, a
+              configuração dos ambientes, a estrutura do projeto e a
+              documentação inicial.
             </p>
 
-            <StatusPhaseBadge status="CONCLUIDO" />
+            <p className="mt-2">
+              O foco foi estabelecer uma estrutura sólida para dar os primeiros
+              passos no desenvolvimento do Axion e criar uma base capaz de
+              acompanhar sua evolução.
+            </p>
+
+            <StatusPhaseBadge status="CONCLUIDO" className="mt-4 lg:mt-8" />
           </div>
         </Accordion>
         <Accordion title="Fase 1 - MVP (Produto Mínimo Viável)">
-          <div className="flex flex-col gap-4 sm:gap-8">
+          <div className="flex flex-col">
             <p>
               Aqui o Axion começa a ganhar vida. Estamos desenvolvendo as
               funcionalidades essenciais da plataforma: cadastro de usuários,
               autenticação segura, criação e gerenciamento de trilhas de estudo,
               além de interações como curtidas, comentários e favoritos. É a
               base que vai permitir que a comunidade comece a criar,
-              compartilhar e descobrir conhecimento de forma organizada.
+              compartilhar e descobrir conhecimento por meio de trilhas de
+              estudo.
             </p>
 
-            <StatusPhaseBadge status="EM ANDAMENTO" />
+            <StatusPhaseBadge status="EM ANDAMENTO" className="mt-4 lg:mt-8" />
           </div>
         </Accordion>
         <Accordion title="Fase 2 - Apoio a criadores">
-          <div className="flex flex-col gap-4 sm:gap-8">
+          <div className="flex flex-col">
             <p>
               Criar conteúdo de qualidade exige dedicação. Nesta fase, vamos
-              implementar um sistema que permite que a comunidade apoie
-              financeiramente os criadores de trilhas — reconhecendo o valor de
-              quem dedica tempo para organizar o conhecimento. Uma forma de
-              manter o ecossistema sustentável e incentivar a produção de
-              conteúdo de alto nível.
+              implementar um sistema que permitirá à comunidade apoiar
+              financeiramente outros criadores de trilhas, reconhecendo o valor
+              de quem dedica tempo para organizar e compartilhar conhecimento.
             </p>
 
-            <StatusPhaseBadge status="PLANEJADO" />
+            <p className="mt-2">
+              A iniciativa também busca contribuir para a sustentabilidade do
+              ecossistema e incentivar a criação de conteúdos cada vez mais
+              completos e relevantes.
+            </p>
+
+            <StatusPhaseBadge status="PLANEJADO" className="mt-4 lg:mt-8" />
           </div>
         </Accordion>
         <Accordion title="Fase 3 - Gamificação">
@@ -116,29 +126,31 @@ export default function PhasesSection() {
           </div>
         </Accordion>
         <Accordion title="Fase 4 - Grupos de estudo">
-          <div className="flex flex-col gap-4 sm:gap-8">
+          <div className="flex flex-col">
             <p>
-              Aprender sozinho não significa aprender isolado. Esta fase vai
-              conectar estudantes através de grupos de estudo com chat integrado
-              — permitindo discussões, troca de conhecimento e colaboração em
-              tempo real. Um espaço para aprender junto, mesmo que cada um
-              esteja no seu próprio ritmo.
+              Ser independente em seus estudos não significa aprender sozinho.
+              Esta fase busca ajudar a conectar estudantes através de grupos de
+              estudo com chat integrado — permitindo discussões, troca de
+              conhecimento e colaboração em tempo real. Um espaço para aprender
+              junto, mesmo que cada um esteja no seu próprio ritmo.
             </p>
 
-            <StatusPhaseBadge status="PLANEJADO" />
+            <StatusPhaseBadge status="PLANEJADO" className="mt-4 lg:mt-8" />
           </div>
         </Accordion>
         <Accordion title="Fase 5 - Recomendação por IA (Inteligência Artificial)">
-          <div className="flex flex-col gap-4 sm:gap-8">
+          <div className="flex flex-col">
             <p>
-              Com o crescimento da plataforma, encontrar a trilha certa pode ser
-              um desafio. É aqui que a inteligência artificial entra: um sistema
-              de recomendação inteligente que vai sugerir trilhas personalizadas
-              com base no seu histórico, interesses e nível de conhecimento.
-              Descubra conteúdo relevante sem perder tempo procurando.
+              Com o crescimento da plataforma, encontrar trilhas adequadas aos
+              seus objetivos pode se tornar um desafio. É aqui que a
+              inteligência artificial entra: um sistema de recomendação que vai
+              sugerir trilhas personalizadas com base no seu histórico,
+              interesses e nível de conhecimento. A ideia é ajudar você a
+              descobrir conteúdos relevantes sem precisar perder tempo
+              procurando entre tantas opções.
             </p>
 
-            <StatusPhaseBadge status="PLANEJADO" />
+            <StatusPhaseBadge status="PLANEJADO" className="mt-4 lg:mt-8" />
           </div>
         </Accordion>
       </div>
