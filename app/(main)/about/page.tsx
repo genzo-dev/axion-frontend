@@ -35,22 +35,20 @@ export default function AboutPage() {
           <Accordion reverse titleSize="xl" title="O problema">
             <div className="flex flex-col gap-4 text-sm lg:text-base">
               <p>
-                Autodidatas têm disciplina para estudar, mas perdem tempo
-                filtrando conteúdo duvidoso. As plataformas tradicionais são
-                fechadas — apenas instrutores aprovados podem criar conteúdo,
-                ignorando a inteligência coletiva da comunidade. Não existe um
-                espaço onde aprendizes organizem, compartilhem e descubram
-                trilhas curadas por outros autodidatas como eles.
-              </p>
-              <p>
-                Três problemas principais. Primeiro, plataformas como Udemy,
-                Coursera e Alura são fechadas — só instrutores aprovados criam
-                cursos, e um especialista nichado não pode compartilhar sem
-                burocracia. Segundo, autodidatas gastam bastante tempo filtrando
-                conteúdo, refazendo o trabalho que outros já fizeram. Terceiro,
-                o conteúdo está disperso — YouTube, Medium, documentação
-                oficial, blogs — e não existe um fio condutor que transforme
-                esses fragmentos em uma jornada coerente.
+                O <strong>Axion</strong> busca solucionar um problema cada vez
+                mais comum para quem aprende de forma independente: a
+                dificuldade de transformar a enorme quantidade de conteúdo
+                disponível na internet em um caminho de aprendizado claro e
+                organizado. Encontrar bons materiais é apenas uma parte do
+                processo; também é necessário avaliar sua qualidade, descobrir
+                quais conteúdos estudar primeiro e entender como eles se
+                conectam. Além disso, esses recursos estão espalhados por
+                diferentes plataformas, como YouTube, blogs, cursos e
+                ferramentas de anotações. O Axion reúne esses caminhos em
+                trilhas de estudo construídas e compartilhadas pela própria
+                comunidade, permitindo que a experiência de quem já percorreu
+                determinado caminho possa ajudar outros estudantes a
+                economizarem tempo e encontrarem melhores formas de aprender.
               </p>
             </div>
           </Accordion>
@@ -60,7 +58,7 @@ export default function AboutPage() {
           <Accordion reverse titleSize="xl" title="Como funciona">
             <div className="flex flex-col gap-4 text-sm lg:text-base">
               <p>
-                O Axion é uma plataforma aberta onde autodidatas criam,
+                O Axion é uma plataforma aberta onde estudantes criam,
                 compartilham e descobrem trilhas de aprendizado. Diferente dos
                 cursos tradicionais, aqui você monta sua própria jornada com o
                 melhor conteúdo que a internet já tem — e ainda ajuda outros a
@@ -70,7 +68,7 @@ export default function AboutPage() {
                 Você cria roteiros de estudo com módulos, links e recursos —
                 pode ser público para a comunidade ou seu registro pessoal
                 privado. Depois, publica sua trilha para que outros possam
-                curtir, comentar e favoritar, ajudando outros autodidatas a
+                curtir, comentar e favoritar, ajudando outros estudantes a
                 encontrar o caminho certo. Por fim, você segue trilhas curadas
                 por quem entende do assunto, marca seu progresso e evolui no seu
                 próprio ritmo.
@@ -116,14 +114,14 @@ export default function AboutPage() {
           <Accordion reverse titleSize="xl" title="Para quem é">
             <div className="flex flex-col gap-4 text-sm lg:text-base">
               <p>
-                Autodidatas e estudantes independentes que aprenderam cedo que
-                não precisam de permissão para estudar. Profissionais em
-                aprendizado contínuo que, entre entregas e prazos, querem
-                conteúdo curado sem perder tempo garimpando. Educadores e
-                criadores que têm conhecimento para compartilhar e buscam um
-                espaço para criar trilhas e alcançar quem realmente quer
-                aprender. Curiosos que simplesmente gostam de aprender coisas
-                novas, sem compromisso com grade curricular.
+                Estudantes independentes que aprenderam cedo que não precisam de
+                permissão para estudar. Profissionais em aprendizado contínuo
+                que, entre entregas e prazos, querem conteúdo curado sem perder
+                tempo garimpando. Educadores e criadores que têm conhecimento
+                para compartilhar e buscam um espaço para criar trilhas e
+                alcançar quem realmente quer aprender. Curiosos que simplesmente
+                gostam de aprender coisas novas, sem compromisso com grade
+                curricular.
               </p>
             </div>
           </Accordion>
